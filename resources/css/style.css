@@ -4,6 +4,7 @@ body{box-sizing: border-box;
     margin-left: 0px;
     margin-right: 0px;
 
+
 }
 header{background-color: rgb(1, 1, 26);
     color: whitesmoke;
@@ -15,8 +16,9 @@ header{background-color: rgb(1, 1, 26);
     border-bottom: 1px solid rgb(27, 27, 27);
     position: fixed;
     width: 100%;
-    top: 2px;
-   
+    top: 0px;
+    
+
     
 }
 
@@ -24,14 +26,23 @@ h1, h2, h3, li, h5,p{
     margin-left: 40px;
 }
 
-nav{
+nav {
     justify-self: end;
-    margin-right: 70px;
+    margin-right: 80px;
+    
 
 }
 
-.section-1{
-    margin-top: 110px;
+nav a{color: whitesmoke;
+      margin-right: 10px;
+}   
+
+a:hover{ color:rgb(123, 123, 207)}
+
+
+.section-1{ 
+
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 10fr 2fr;
     align-content: center;
@@ -70,7 +81,36 @@ footer{ background-color: rgb(1, 1, 26);;
               align-items: center; 
               
 }
+.contact-image img{width: 40px;
+                    height: 30px;
+                margin-left: 40px;}
+/* Project html styling*/
 
-#project-img{ margin-left: 40px;
+.Kelvin-project, .jaytrades-project, .msg-gen-project{
+    margin-right: 40px;
+}
+.project-main{margin-top: 110px;
 
+}
+#project-img{  width: 400px;
+               
+               justify-self: center;
+}
+
+
+
+
+.kelvin-display{ 
+                 width: 300px;
+                 justify-self: center;
+                 text-align:center;
+                 background-image: url(/resources/converterImage.jpg);
+                 color: whitesmoke;
+                 background-size: cover;
+                 background-position: 0px;
+                 border-radius: 20px;
+                 border: 2px solid black;
+                 
+                 
+                 
 }
