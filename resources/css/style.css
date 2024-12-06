@@ -114,3 +114,38 @@ footer{ background-color: rgb(1, 1, 26);;
                  
                  
 }
+
+#msg-project-box{ width: 400px;
+                 justify-self: center;
+                 border: 2px solid black;
+                 text-align:center;
+                 border-radius: 20px;
+
+}
+
+#msg-display-box{border: 2px solid black;
+                 min-width: 250px;
+                 max-width: 350px;
+                 min-height: 70px;
+                 max-height: 100px;
+                 justify-self: center;
+                 text-align:center;
+
+
+}
+#msg-display{margin-right: 25px;
+            color: blue;
+}
+
+#gen-button{margin: 10px;
+}
+
+#run-message{color:rgb(8, 50, 140);
+             text-decoration: underline;
+
+}
+
+#run-message:hover{ 
+    cursor: pointer;
+    
+}

@@ -11,18 +11,18 @@
                 <h1>J.O Olajide</h1>
             </div>
             <nav>
-                <a href="/index.html">About me</a>
+                <a href="/index.html">Home</a>
                 <a href="#my-projects">Projects</a>
                 <a href="#contacts">Contacts</a>
             </nav>
         </header>
         <main class="project-main">
            <h2 id="my-projects">My Projects</h2>
-           <div class="Kelvin-project">
+           <div class="Kelvin-project" role="presentation">
               <h3>Kelvin to Fahrenheit Converter</h3>
               <p>This project is a simple yet functional web-based temperature converter that allows users to convert temperatures from Kelvin to Fahrenheit seamlessly. Users can input a Kelvin value via a query parameter in the URL, and the application calculates and displays the equivalent Fahrenheit value instantly upon submission. Built using HTML, JavaScript, and basic CSS, the project demonstrates dynamic interaction with URL parameters, event handling, and mathematical computations in a user-friendly interface.</p>
               <div class="kelvin-display">
-                   <div>
+                   <div aria-label=" kelvin converter project">
                      <h4>Kelvin to Fahrenheit Converter</h4>
                       <form action="index.html"  method="GET">
                         <label for="kelvin-input" >Enter the kelvin Value</label>
@@ -38,30 +38,34 @@
               <h3>JayTrades Digital Payment and Gift Card Platform</h3>
               <p>This project is a responsive web interface for JayTrades, a platform offering services such as buying and selling gift cards, paying bills, acquiring gadgets, and obtaining virtual dollar cards. The homepage features a welcoming section introducing the platform, a user-friendly login form for account access, and a call-to-action for new users to create an account. The site emphasizes simplicity, security, and financial empowerment, making it an ideal solution for modern digital transactions. Built using HTML and styled with CSS, this project showcases clean design and intuitive user navigation.</p>
               <div id="project-img">
-                <img  src="/resources/jaytrades.png"/>
+                <img  src="/resources/jaytrades.png" alt="jay trades project image"/>
               </div>
            </div>
            <div class="msg-gen-project">
-              <h3>Random Inspirational Message Generator</h3>
-              <p>This project generates a random collection of inspirational messages based on predefined lessons. It uses JavaScript to randomly select and compile messages from three thematic categories: love, temptation, and self-discovery. A getRandom function ensures the selection is unpredictable, and a loop dynamically constructs the output. The final message is formatted and displayed in the console, offering users unique motivational insights each time the program is run. This project demonstrates foundational programming concepts like object traversal, randomization, and string manipulation in an engaging way.</p>
-              <div id="project-img">
-                <img  src="/resources/msg-gen.png"/>
-              </div>
+               <h3>Random Inspirational Message Generator</h3>
+               <p>This project generates a random collection of inspirational messages based on predefined lessons. It uses JavaScript to randomly select and compile messages from three thematic categories: love, temptation, and self-discovery. A getRandom function ensures the selection is unpredictable, and a loop dynamically constructs the output. The final message is formatted and displayed in the console, offering users unique motivational insights each time the program is run. This project demonstrates foundational programming concepts like object traversal, randomization, and string manipulation in an engaging way. <span id="run-message">run-project.</span></p>
+              <div id="msg-project-box">
+                   <h4>Inspirational Message Generator</h4>
+                   <div id="msg-display-box">
+                      <p id="msg-display">welcome! <br>Click the button below to get your Message.</p>    
+                   </div>
+                   <button id="gen-button" type="button">Get Your Message</button>
+               </div>
            </div>
         </main>
         <footer>
             <div id="contacts">
                <h3>Contacts</h3>
-               <div class="contacts-info">
-                  <h5>Email: olajidejamiu24@gmail.com</h5>
-                  <h5>Phone Num: +234 706 3445 7926</h5>
-                  <h5>Git-Hub/Linked-In: Jamiu Olajide</h5>
+               <div class="contacts-info" role="presentation">
+                  <p>Email: olajidejamiu24@gmail.com</p>
+                  <p>Phone Num: +234 706 3445 7926</p>
+                  <p>Git-Hub/Linked-In: Jamiu Olajide</p>
                 </div>
                 <div class="contact-image">
-                    <a href="https://wa.me/2347063457926?text=Hello%20I%20want%20to%20contact%20you!"><img src="resources/Whatsapp-Logo-Png.png"/></a>
-                    <a><img src="resources/facebook-logo-.png"/></a>
-                    <a><img src="resources/linkedin-logo-hd-png-.png"/></a>
-                    <a href="https://github.com/jaysquare24"><img src="resources/github_PNG28.png"/></a>
+                    <a href="https://wa.me/2347063457926?text=Hello%20I%20want%20to%20contact%20you!" target="_blank"><img src="resources/Whatsapp-Logo-Png.png" alt="whatsapp contact link"/></a>
+                    <a href="https://www.facebook.com/jamiu4flex" target="_blank"><img src="resources/facebook-logo-.png" alt="facebook contact link"/></a>
+                    <a href="htpps://www.linkedin.com/in/jamiu-olajide-795444185" target="_blank"><img src="resources/linkedin-logo-hd-png-.png" alt="lindedin contact link"/></a>
+                    <a href="https://github.com/jaysquare24" target="_blank"><img src="resources/github_PNG28.png" alt="github contact link"/></a>
                 </div>
             </div>
             <div>
