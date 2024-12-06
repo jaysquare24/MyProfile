@@ -3,10 +3,15 @@ const fomulaA = 9;
 const  fomulaB = 5;
 const fomulaC= 32;
 const diffKC= 273;
-// Other variables
+// Other variablest
+let kelvinNav = document.getElementById('kelvin-nav');
+let runConverterClick = document.getElementById('run-converter');
+let kelvinProject = document.getElementById('kelvin-display');
 let submitButton = document.getElementById('submit');
-let kelvinInput = document.getElementById('kelvin-input')
+let kelvinInput = document.getElementById('kelvin-input');
 let kelvin;
+   kelvinProject.hidden = true;
+
  
 //  Fahrenheit converter function
 const calculateFahreheit = () => {
@@ -30,8 +35,35 @@ let displayAnswer = (event)=>{
     answer.innerHTML = `The Fahrenheit equivalent is: ${calculateFahreheit()} \u00B0F `;      
 }
 
+let displayCoverterProject = ()=>{
+    kelvinProject.hidden = false;  
+    messageProject.hidden = true;
+    jayTradesProject.hidden = true;
+    
+}
+
 //Event Listener 
 submitButton.addEventListener('click', displayAnswer);
+runConverterClick.addEventListener('click', displayCoverterProject);
+kelvinNav.addEventListener('click', displayCoverterProject);
+
+
+//JAYTRADES PROJECT JAVASCRIPT CODE
+let jayTradesNav = document.getElementById('jaytrades-nav');
+let viewProjectClick = document.getElementById('view-project');
+let jayTradesProject = document.getElementById('jaytrades-project-img')
+    jayTradesProject.hidden = true;
+
+let displayJayTradeProject = ()=>{
+       jayTradesProject.hidden = false
+       kelvinProject.hidden = true;
+       messageProject.hidden = true;
+}
+
+viewProjectClick.addEventListener('click', displayJayTradeProject);
+jayTradesNav.addEventListener('click', displayJayTradeProject);
+
+
 
 // INSPIRATIONAL MESSAGE GENERATOR JAVASCRIPT CODES
 // Random Number Function
@@ -94,15 +126,17 @@ const formatMessage =(messages)=>{
 }
 
 // DOM Variables
+let messageGenNav = document.getElementById('msg-gen-nav');
 let runMessageClick = document.getElementById('run-message');
 let button = document.getElementById('gen-button');
 let messageProject = document.getElementById('msg-project-box');
     messageProject.hidden = true;
 
-//Events Functions
-let displayProject = ()=>{
-    messageProject.hidden = false;
-    
+//Events Handler Functions
+let displayMsgGenProject = ()=>{
+    messageProject.hidden = false;  
+    jayTradesProject.hidden = true;  
+    kelvinProject.hidden = true;
 }
 
 let displayMessage = ()=>{
@@ -112,6 +146,27 @@ let displayMessage = ()=>{
 }
 // Add Events Listeners
 button.addEventListener('click', displayMessage);
-runMessageClick.addEventListener('click', displayProject);
+runMessageClick.addEventListener('click', displayMsgGenProject);
+messageGenNav.addEventListener('click', displayMsgGenProject);
 
+//PROJECT NAVIGATION JAVASCRIPT
+//DOM variables
+
+let projectNavSectionHover = document.getElementById('sub-project-nav');
+let projectMainNavHover = document.getElementById('main-project-nav');
+let projectSubNav = document.getElementById('sub-project-nav');
+    projectSubNav.hidden = true;
+
+let displaySubProjectNav = ()=>{
+    projectSubNav.hidden = false;
+    
+}
+
+let hideSubProjectNav = ()=>{
+    projectSubNav.hidden = true;
+}
+
+
+projectMainNavHover.addEventListener('mouseover', displaySubProjectNav);
+projectNavSectionHover.addEventListener('mouseleave', hideSubProjectNav);
 

@@ -29,12 +29,20 @@ h1, h2, h3, li, h5,p{
 nav {
     justify-self: end;
     margin-right: 80px;
+    display: inline-flex;
     
 
 }
 
+#sub-project-nav a{
+    display: block;
+    position:static;
+    
+}
+
 nav a{color: whitesmoke;
       margin-right: 10px;
+      
 }   
 
 a:hover{ color:rgb(123, 123, 207)}
@@ -92,7 +100,7 @@ footer{ background-color: rgb(1, 1, 26);;
 .project-main{margin-top: 110px;
 
 }
-#project-img{  width: 400px;
+#jaytrades-project-img{  width: 400px;
                
                justify-self: center;
 }
@@ -120,32 +128,44 @@ footer{ background-color: rgb(1, 1, 26);;
                  border: 2px solid black;
                  text-align:center;
                  border-radius: 20px;
-
+                 background-image: url("/resources/Inspi.jpeg");
+                 background-size:cover;
+                 background-position:0px;
 }
 
-#msg-display-box{border: 2px solid black;
+#msg-display-box{
                  min-width: 250px;
                  max-width: 350px;
                  min-height: 70px;
                  max-height: 100px;
                  justify-self: center;
                  text-align:center;
-
+                 border: 2px solid rgb(33, 32, 32);
+                 background-color: rgb(49, 47, 47);
+                 opacity: 90%;
+                 border-radius:10px ;
+                 
 
 }
 #msg-display{margin-right: 25px;
-            color: blue;
+            color: whitesmoke;
+            
 }
 
 #gen-button{margin: 10px;
 }
 
-#run-message{color:rgb(8, 50, 140);
+#ins-tittle{ color: rgb(231, 231, 231);
+     font-family: sans-serif;
+
+}
+#run-message, #view-project, #run-converter{color:rgb(8, 50, 140);
              text-decoration: underline;
 
 }
 
-#run-message:hover{ 
+
+#run-message:hover, #view-project:hover, #run-converter:hover { 
     cursor: pointer;
     
 }
