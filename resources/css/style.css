@@ -1,15 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800&amp;display=swap);
+html{
+    font-size: 16px;
+}
+
+@media only screen and (max-width:1600px){
 body{box-sizing: border-box;
     background-color: rgb(219, 219, 211);
-    font-size: 16px;
-    margin-left: 0px;
-    margin-right: 0px;
-
+    margin: 0;
+    
 
 }
 header{background-color: rgb(1, 1, 26);
     color: whitesmoke;
     display: grid ;
-    grid-template-rows: 69px;
+    grid-template-rows: 100%;
     grid-template-columns: 6fr 6fr;
     align-content: center;
     align-items: center;
@@ -17,14 +21,21 @@ header{background-color: rgb(1, 1, 26);
     position: fixed;
     width: 100%;
     top: 0px;
-    
+    font-family: Arial;
+   
 
     
+}
+h1, h2, h3, h4, h6{ font-family: Georgia;
+
 }
 
 h1, h2, h3, li, h5,p{
     margin-left: 40px;
+    
 }
+
+p, ul{ font-family: "Nunito Sans", sans-serif;}
 
 nav {
     justify-self: end;
@@ -36,9 +47,17 @@ nav {
 
 #sub-project-nav a{
     display: block;
-    position:static;
-    
+    margin-top: 5px;
+     
 }
+
+#sub-project-nav{
+    position: absolute;
+    background-color:  rgb(1, 1, 26) ;
+    padding: 10px;
+}
+
+
 
 nav a{color: whitesmoke;
       margin-right: 10px;
@@ -49,60 +68,107 @@ a:hover{ color:rgb(123, 123, 207)}
 
 
 .section-1{ 
-
-    margin-top: 100px;
+    width: 100%;
     display: grid;
     grid-template-columns: 10fr 2fr;
-    align-content: center;
     align-items: center; 
-   
+    justify-items: center;
+   overflow: hidden;
+   margin-bottom: 20px;
     
 }
-.message{width: 760px;
+
+#about-me{ 
+    padding-top:80px ;
+
+}
+
+.message{ 
          background-color: rgb(214, 213, 208);
          border: 1px solid rgba(160, 156, 156, 0.911) ;
-         border-radius:5px ;
-         padding-left: 10px;
+         border-radius:5px ;  
          padding-right: 10px;
          margin-left: 40px;
+         margin-right: 1rem;
+         text-align: justify;
 }
 
 .image{justify-self: end;
       
 }
-img{width: 400px;
-    height: 300px;
+.section-1 img{width: 400px;
+    height: 400px;
+    margin-right: 20px;
+    margin-top: 150px;
+    
+    border-radius: 5%;
 }
 
 footer{ background-color: rgb(1, 1, 26);;
         color: whitesmoke;
+        padding: 10px 10px;
+        margin-top: 30px;
 
 }
 
 
-.contacts-info{
-              margin-top: -25px;
-             display: grid;
+.contacts-info{ width: 100%;
+              margin-top: -5px;
+              display: grid;
               grid-template-rows:  100%;
-              grid-template-columns:  33% 34% 33%;
+              grid-template-columns:  4fr 4fr 4fr;
               align-content: center;
               align-items: center; 
+              justify-items:start;
               
+              
+}
+
+
+
+.Email p, .num p, .git p{
+     text-align: center;
 }
 .contact-image img{width: 40px;
                     height: 30px;
-                margin-left: 40px;}
+                margin-left: 40px;
+}
+
+ #contact-image-copyright-container{
+                width: 100%;
+                margin-top: 20px;
+                display: grid;
+                 grid-template-rows:  100%;
+                 grid-template-columns:  50% 50%;
+                 align-content: center;
+                 align-items: center; 
+                 
+ }  
+                
+.copyright { justify-self: end;
+             margin-right: 80px;
+
+}             
 /* Project html styling*/
 
-.Kelvin-project, .jaytrades-project, .msg-gen-project{
+.kelvin-project, .jaytrades-project, .msg-gen-project{
     margin-right: 40px;
+    text-align:justify ;
+    margin-bottom: 40px;
 }
 .project-main{margin-top: 110px;
 
 }
-#jaytrades-project-img{  width: 400px;
-               
+#jaytrades-project-img{  max-width: 400px;
+                         min-width: 250px;
+                     
                justify-self: center;
+}
+
+#jaytrades-project-img img{  width: 100%;
+                            height: auto;
+                     
+    
 }
 
 
@@ -123,6 +189,10 @@ footer{ background-color: rgb(1, 1, 26);;
                  
 }
 
+.kelvin-display #result{
+   margin-left: auto ;
+}
+
 #msg-project-box{ width: 400px;
                  justify-self: center;
                  border: 2px solid black;
@@ -137,13 +207,14 @@ footer{ background-color: rgb(1, 1, 26);;
                  min-width: 250px;
                  max-width: 350px;
                  min-height: 70px;
-                 max-height: 100px;
+                 max-height: 130px;
                  justify-self: center;
                  text-align:center;
                  border: 2px solid rgb(33, 32, 32);
                  background-color: rgb(49, 47, 47);
                  opacity: 90%;
                  border-radius:10px ;
+                padding-left: 15px;
                  
 
 }
@@ -168,4 +239,195 @@ footer{ background-color: rgb(1, 1, 26);;
 #run-message:hover, #view-project:hover, #run-converter:hover { 
     cursor: pointer;
     
+}
+
+}
+
+@media only screen and (max-width: 780px ){
+
+
+    .section-1{ 
+        width: 100%;
+        display:block;
+        margin-right: 0px;
+        grid-template-columns: none;
+        
+            
+    }
+
+    .message p{ 
+       
+        margin-left:10px;    
+    }
+    .message{
+        margin-right: 40px;
+    }
+    .image{ 
+        width: auto;
+        align-content:normal;
+       justify-self: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+    }
+ 
+    .copyright{
+        font-size: 0.6rem;
+        justify-self: end;
+
+    }
+
+    .image img{ width: 500px;
+        height:400px;
+        margin-top: 0px;
+       
+     }
+    
+    
+
+}
+
+@media only screen and (max-width: 480px ){
+
+    body{width: 100%;
+
+    }
+    header{ width: 100%;
+         grid-template-rows: 100%;
+         grid-template-columns: 6fr 6fr;
+
+    }
+    .name{ width: 100%;
+        margin-left: 20px;
+        font-size: 0.5rem;
+        margin-right: 100px;
+    }
+
+    .home-nav{  
+        margin-left: 20px;
+         width: 100%;
+         font-size: 0.75rem;
+        justify-self:normal;
+        
+    }
+    
+       
+    
+    
+    .section-1{ 
+        width: 100%;
+        display:block;
+        margin-right: 0px;
+        grid-template-columns: none;
+        margin-top: -30px;
+       
+        
+        
+    }
+    .section-1, .section-2, #contacts{
+        margin-left: 20px;
+    }
+    
+
+    .message{ 
+        width:auto;
+        text-align:justify;
+        margin-left: 0px;
+        margin-right: 16px;
+        padding-left: 10px;
+        
+        
+    }
+    .image{ 
+        width: 350px;
+        align-content:normal;
+       justify-self: center;
+       margin-left: 25px;
+       margin-right: 35px;
+        margin-top:20px ;
+        margin-bottom: 20px;
+        
+        
+    }
+
+    .image img{ width: 100%;
+        margin-top: 0px;
+        padding-top: 0px;
+        justify-self: center;
+       
+    }
+    h1, h2, h3, li, h5,p{
+        margin-left: 0;
+        
+    }
+   
+    footer{
+        width:100%;
+        
+    }
+    .git{
+        justify-self: unset;
+    }
+   
+    .email p, .num p, .git p{
+        display: inline-block;
+        font-size: 0.9rem;
+    }
+
+    .copyright{
+        margin-top: 30px;
+        font-size: 0.5rem;
+        justify-self: center;
+    }
+
+    .contacts-info{
+        width: 100%;
+        display:block;
+    }
+
+    #contact-image-copyright-container{
+        width: 100%;
+        display:block;
+    }
+    
+    .contacts-info, #contact-image-copyright-container{
+        margin-left: 1.2rem;
+    }
+
+    .contact-image img{
+        margin-left: 0.2rem;
+    }
+
+    .project-nav{  
+
+        width: 1rem;
+        margin-left: 40px;
+        font-size: 0.7rem;
+       justify-self:normal;
+    }
+    .project-main{ margin-left: 30px;
+        margin-top: 80px;
+    }
+    .kelvin-project, .jaytrades-project, .msg-gen-project{
+       
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
+
+    #jaytrades-project-img{
+        width: auto;
+    }
+
+    #msg-project-box {
+        width: auto;
+        height: auto;
+    }
+
+    #msg-display-box{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        height: auto;
+    }
+
+
 }

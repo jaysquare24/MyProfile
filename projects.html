@@ -3,6 +3,7 @@
     <head>
         <title>projects</title>
         <link rel="stylesheet" href="resources/css/style.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
     </head>
     <body>
@@ -10,12 +11,12 @@
             <div class="name">
                 <h1>J.O Olajide</h1>
             </div>
-            <nav>
+            <nav class="project-nav">
                 <a href="/index.html">Home</a>
                 <div id="project-nav-section">
                   <a  id="main-project-nav" href="#my-projects">Projects</a>
                   <div id="sub-project-nav">
-                    <a href="#Kelvin-project" id="kelvin-nav">Fahrenheit converter</a>
+                    <a href="#kelvin-project" id="kelvin-nav">Fahrenheit converter</a>
                     <a href="#jaytrades-project" id="jaytrades-nav">JayTrades Platform</a>
                     <a href="#msg-gen-project" id="msg-gen-nav">Message Generator</a>
                   </div>
@@ -25,8 +26,8 @@
         </header>
         <main class="project-main">
            <h2 id="my-projects">My Projects</h2>
-           <div class="Kelvin-project" role="presentation">
-              <h3>Kelvin to Fahrenheit Converter</h3>
+           <div class="kelvin-project" role="presentation">
+              <h3 id="kelvin-project-page" >Kelvin to Fahrenheit Converter</h3>
               <p>This project is a simple yet functional web-based temperature converter that allows users to convert temperatures from Kelvin to Fahrenheit seamlessly. Users can input a Kelvin value via a query parameter in the URL, and the application calculates and displays the equivalent Fahrenheit value instantly upon submission. Built using HTML, JavaScript, and basic CSS, the project demonstrates dynamic interaction with URL parameters, event handling, and mathematical computations in a user-friendly interface. <span id="run-converter">Convert Kelvin to Fahrenheit.</span></p>
               <div class="kelvin-display" id="kelvin-display">
                    <div aria-label=" kelvin converter project">
@@ -64,20 +65,32 @@
             <div id="contacts">
                <h3>Contacts</h3>
                <div class="contacts-info" role="presentation">
-                  <p>Email: olajidejamiu24@gmail.com</p>
-                  <p>Phone Num: +234 706 3445 7926</p>
-                  <p>Git-Hub/Linked-In: Jamiu Olajide</p>
+                  <div class="email">
+                    <p>Email Address:</p>
+                    <p>olajidejamiu24@gmail.com</p>
+                  </div>
+                  <div class="num">
+                    <p>Phone Num:</p>
+                    <p>+234 706 3445 7926</p>
+                  </div>
+                  <div class="git">
+                    <p>Git-Hub/Linked-In:</p>
+                  <p>Jamiu Olajide</p>
+                  </div>
                 </div>
-                <div class="contact-image">
-                    <a href="https://wa.me/2347063457926?text=Hello%20I%20want%20to%20contact%20you!" target="_blank"><img src="resources/Whatsapp-Logo-Png.png" alt="whatsapp contact link"/></a>
-                    <a href="https://www.facebook.com/jamiu4flex" target="_blank"><img src="resources/facebook-logo-.png" alt="facebook contact link"/></a>
-                    <a href="htpps://www.linkedin.com/in/jamiu-olajide-795444185" target="_blank"><img src="resources/linkedin-logo-hd-png-.png" alt="lindedin contact link"/></a>
-                    <a href="https://github.com/jaysquare24" target="_blank"><img src="resources/github_PNG28.png" alt="github contact link"/></a>
+                <div id="contact-image-copyright-container">
+                    <div class="contact-image">
+                        <a href="https://wa.me/2347063457926?text=Hello%20I%20want%20to%20contact%20you!" target="_blank"><img src="resources/Whatsapp-Logo-Png.png"/></a>
+                        <a href="https://www.facebook.com/jamiu4flex" target="_blank"><img src="resources/facebook-logo-.png"/></a>
+                        <a href="https://www.linkedin.com/in/jamiu-olajide-795444185" target="_blank"><img src="resources/linkedin-logo-hd-png-.png"/></a>
+                      <a href="https://github.com/jaysquare24" target="_blank"><img src="resources/github_PNG28.png"/></a>
+                    </div>
+                    <div>
+                        <P class="copyright">copyright &copy; - All Rights Reserved by Olajide</P>
+                    </div>
                 </div>
             </div>
-            <div>
-                <P class="footer2">copyright &copy; - All Rights Reserved by Olajide</P>
-            </div>
+           
         </footer>
         <script src="script.js"></script>
     </body>
