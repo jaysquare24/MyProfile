@@ -31,10 +31,6 @@ h1, h2, h3, h4, h6{ font-family: Georgia;
 
 }
 
-h1, h2, h3, li, h5,p{
-    margin-left: 40px;
-    
-}
 
 p, ul{ font-family: "Nunito Sans", sans-serif;}
 
@@ -288,13 +284,12 @@ footer{ background-color: rgb(1, 1, 26);;
 
 }
 
-@media only screen and (max-width: 450px ){
+@media only screen and (max-width: 480px ){
 
     body{width: 100%;
 
     }
 
-    html{font-size: 14px;}
     header{ width: 100%;
          grid-template-rows: 100%;
          grid-template-columns: 6fr 6fr;
