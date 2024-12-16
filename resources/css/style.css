@@ -320,7 +320,7 @@ footer{ background-color: rgb(1, 1, 26);;
     
     
     .section-1{ 
-        width: 90%;
+        width: 97%;
         display:block;
         margin-right: 0px;
         grid-template-columns: none;
@@ -347,7 +347,7 @@ footer{ background-color: rgb(1, 1, 26);;
         width: 350px;
         align-content:normal;
        justify-self: center;
-       margin-left: 25px;
+       margin-left: 10px;
        margin-right: 35px;
         margin-top:20px ;
         margin-bottom: 20px;
@@ -410,7 +410,7 @@ footer{ background-color: rgb(1, 1, 26);;
         font-size: 0.7rem;
        justify-self:normal;
     }
-    .project-main{ width:95%;
+    .project-main{ width:97%;
         margin-left: 20px;
         margin-top: 80px;
     }
