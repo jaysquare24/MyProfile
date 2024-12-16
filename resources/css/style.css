@@ -344,7 +344,7 @@ footer{ background-color: rgb(1, 1, 26);;
         
     }
     .image{ 
-        width: 100%;
+        width: 350px;
         align-content:normal;
        justify-self: center;
        margin-left: 25px;
@@ -410,8 +410,8 @@ footer{ background-color: rgb(1, 1, 26);;
         font-size: 0.7rem;
        justify-self:normal;
     }
-    .project-main{ width:70%;
-        margin-left: 50px;
+    .project-main{ width:85%;
+        margin-left: 20px;
         margin-top: 80px;
     }
     .kelvin-project, .jaytrades-project, .msg-gen-project{
