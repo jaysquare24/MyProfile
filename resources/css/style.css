@@ -198,7 +198,7 @@ footer{ background-color: rgb(1, 1, 26);;
                  border: 2px solid black;
                  text-align:center;
                  border-radius: 20px;
-                 background-image: url("./resources/Inspi.jpeg");
+                 background-image: url("../Inspi.jpeg");
                  background-size:cover;
                  background-position:0px;
 }
@@ -287,7 +287,7 @@ footer{ background-color: rgb(1, 1, 26);;
 
 }
 
-@media only screen and (max-width: 480px ){
+@media only screen and (max-width: 450px ){
 
     body{width: 100%;
 
