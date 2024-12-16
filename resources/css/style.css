@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800&amp;display=swap);
 html{
     font-size: 16px;
-    padding: 0;
-    margin: 0;
+    
 }
 
 @media only screen and (max-width:1600px){
@@ -294,6 +293,8 @@ footer{ background-color: rgb(1, 1, 26);;
     body{width: 100%;
 
     }
+
+    html{font-size: 14px;}
     header{ width: 100%;
          grid-template-rows: 100%;
          grid-template-columns: 6fr 6fr;
