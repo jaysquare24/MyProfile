@@ -429,6 +429,13 @@ footer{
         margin-bottom: 40px;
     }
 
+    .kelvin-display{ box-sizing: border-box;
+                 width:auto;
+                 justify-self: center;
+                 text-align:center;
+    }
+
+
     
     #jaytrades-project-img{
         width: auto;
