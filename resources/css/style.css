@@ -422,11 +422,7 @@ footer{ background-color: rgb(1, 1, 26);;
         margin-bottom: 40px;
     }
 
-    .kelvin-display{ 
-                 width:auto;
-                 justify-self: center;
-                 text-align:center;
-    }
+    
     #jaytrades-project-img{
         width: auto;
     }
