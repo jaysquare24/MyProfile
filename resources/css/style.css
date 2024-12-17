@@ -424,6 +424,8 @@ footer{ background-color: rgb(1, 1, 26);;
 
     .kelvin-display{ 
                  width:200px;
+                 justify-self: center;
+                 text-align:center;
     }
     #jaytrades-project-img{
         width: auto;
