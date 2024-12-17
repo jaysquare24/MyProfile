@@ -412,7 +412,7 @@ footer{ background-color: rgb(1, 1, 26);;
         font-size: 0.7rem;
        justify-self:normal;
     }
-    .project-main{ width:97%;
+    .project-main{ width:100%;
         margin-left: 20px;
         margin-top: 80px;
     }
@@ -423,7 +423,7 @@ footer{ background-color: rgb(1, 1, 26);;
     }
 
     .kelvin-display{ 
-                 width:200px;
+                 width:auto;
                  justify-self: center;
                  text-align:center;
     }
