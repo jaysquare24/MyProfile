@@ -170,6 +170,6 @@ let hideSubProjectNav = ()=>{
 projectMainNavHover.addEventListener('mouseover', displaySubProjectNav);
 projectNavSectionHover.addEventListener('mouseleave', hideSubProjectNav);
 
-projectMainNavHover.addEventListener('touchstart', displaySubProjectNav);
+
 projectNavSectionHover.addEventListener('touchend', hideSubProjectNav);
 
