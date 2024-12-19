@@ -170,9 +170,3 @@ let hideSubProjectNav = ()=>{
 
 projectMainNavHover.addEventListener('mouseover', displaySubProjectNav);
 projectNavSectionHover.addEventListener('mouseleave', hideSubProjectNav);
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> e92df187fe12a454ed667c3bfcf78ab96a569aab
