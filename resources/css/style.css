@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800&amp;display=swap);
 html{
     font-size: 16px;
+    
 }
+
+body{width:100%;}
 
 @media only screen and (max-width:1600px){
 body{box-sizing: border-box;
@@ -10,7 +13,8 @@ body{box-sizing: border-box;
     
 
 }
-header{background-color: rgb(1, 1, 26);
+header{box-sizing: border-box;
+    background-color: rgb(1, 1, 26);
     color: whitesmoke;
     display: grid ;
     grid-template-rows: 100%;
@@ -34,6 +38,7 @@ h1, h2, h3, li, h5,p{
     margin-left: 40px;
     
 }
+
 
 p, ul{ font-family: "Nunito Sans", sans-serif;}
 
@@ -67,7 +72,7 @@ nav a{color: whitesmoke;
 a:hover{ color:rgb(123, 123, 207)}
 
 
-.section-1{ 
+.section-1{ box-sizing: border-box;
     width: 100%;
     display: grid;
     grid-template-columns: 10fr 2fr;
@@ -104,7 +109,9 @@ a:hover{ color:rgb(123, 123, 207)}
     border-radius: 5%;
 }
 
-footer{ background-color: rgb(1, 1, 26);;
+footer{ 
+    box-sizing: border-box;
+    background-color: rgb(1, 1, 26);;
         color: whitesmoke;
         padding: 10px 10px;
         margin-top: 30px;
@@ -156,10 +163,13 @@ footer{ background-color: rgb(1, 1, 26);;
     text-align:justify ;
     margin-bottom: 40px;
 }
-.project-main{margin-top: 110px;
+.project-main{
+    box-sizing: border-box;
+    margin-top: 110px;
 
 }
-#jaytrades-project-img{  max-width: 400px;
+#jaytrades-project-img{  box-sizing: border-box;
+                         max-width: 400px;
                          min-width: 250px;
                      
                justify-self: center;
@@ -174,11 +184,11 @@ footer{ background-color: rgb(1, 1, 26);;
 
 
 
-.kelvin-display{ 
+.kelvin-display{ box-sizing: border-box;
                  width: 300px;
                  justify-self: center;
                  text-align:center;
-                 background-image: url(/resources/converterImage.jpg);
+                 background-image: url("../converterImage.jpg");
                  color: whitesmoke;
                  background-size: cover;
                  background-position: 0px;
@@ -193,12 +203,13 @@ footer{ background-color: rgb(1, 1, 26);;
    margin-left: auto ;
 }
 
-#msg-project-box{ width: 400px;
+#msg-project-box{ box-sizing: border-box;
+                 width: 400px;
                  justify-self: center;
                  border: 2px solid black;
                  text-align:center;
                  border-radius: 20px;
-                 background-image: url("/resources/Inspi.jpeg");
+                 background-image: url("../inspi.jpeg");
                  background-size:cover;
                  background-position:0px;
 }
@@ -292,8 +303,9 @@ footer{ background-color: rgb(1, 1, 26);;
     body{width: 100%;
 
     }
+
     header{ width: 100%;
-         grid-template-rows: 100%;
+         grid-template-rows: 90%;
          grid-template-columns: 6fr 6fr;
 
     }
@@ -315,7 +327,7 @@ footer{ background-color: rgb(1, 1, 26);;
     
     
     .section-1{ 
-        width: 100%;
+        width: 95%;
         display:block;
         margin-right: 0px;
         grid-template-columns: none;
@@ -342,7 +354,7 @@ footer{ background-color: rgb(1, 1, 26);;
         width: 350px;
         align-content:normal;
        justify-self: center;
-       margin-left: 25px;
+       margin-left: 5px;
        margin-right: 35px;
         margin-top:20px ;
         margin-bottom: 20px;
@@ -353,6 +365,8 @@ footer{ background-color: rgb(1, 1, 26);;
     .image img{ width: 100%;
         margin-top: 0px;
         padding-top: 0px;
+        margin-right: 10px;
+         margin-left: 10px;     
         justify-self: center;
        
     }
@@ -405,7 +419,8 @@ footer{ background-color: rgb(1, 1, 26);;
         font-size: 0.7rem;
        justify-self:normal;
     }
-    .project-main{ margin-left: 50px;
+    .project-main{ width:98%;
+        margin-left: 20px;
         margin-top: 80px;
     }
     .kelvin-project, .jaytrades-project, .msg-gen-project{
@@ -414,6 +429,14 @@ footer{ background-color: rgb(1, 1, 26);;
         margin-bottom: 40px;
     }
 
+    .kelvin-display{ box-sizing: border-box;
+                 width:auto;
+                 justify-self: center;
+                 text-align:center;
+    }
+
+
+    
     #jaytrades-project-img{
         width: auto;
     }

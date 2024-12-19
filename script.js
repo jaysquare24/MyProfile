@@ -1,3 +1,4 @@
+
 //Final variable declarattion
 const fomulaA = 9;
 const  fomulaB = 5;
@@ -169,4 +170,3 @@ let hideSubProjectNav = ()=>{
 
 projectMainNavHover.addEventListener('mouseover', displaySubProjectNav);
 projectNavSectionHover.addEventListener('mouseleave', hideSubProjectNav);
-
