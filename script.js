@@ -182,4 +182,5 @@ subLinks.forEach(link=>{
 
 projectMainNavHover.addEventListener('mouseover', displaySubProjectNav);
 projectNavSectionHover.addEventListener('mouseleave', hideSubProjectNav);
-body.addEventListener('touchcancel', hideSubProjectNav );
+projectNavSectionHover.addEventListener('touchstart',displaySubProjectNav);
+body.addEventListener('touchend', hideSubProjectNav );
