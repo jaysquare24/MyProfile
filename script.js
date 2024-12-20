@@ -10,6 +10,7 @@ let runConverterClick = document.getElementById('run-converter');
 let kelvinProject = document.getElementById('kelvin-display');
 let submitButton = document.getElementById('submit');
 let kelvinInput = document.getElementById('kelvin-input');
+
 let kelvin;
    kelvinProject.hidden = true;
 
@@ -36,8 +37,11 @@ let displayAnswer = (event)=>{
     answer.innerHTML = `The Fahrenheit equivalent is: ${calculateFahreheit()} \u00B0F `;      
 }
 
+
+//Events Handler Functions
+
 let displayCoverterProject = ()=>{
-    kelvinProject.hidden = false;  
+    kelvinProject.hidden = !kelvinProject.hidden;
     messageProject.hidden = true;
     jayTradesProject.hidden = true;
     
@@ -56,7 +60,7 @@ let jayTradesProject = document.getElementById('jaytrades-project-img')
     jayTradesProject.hidden = true;
 
 let displayJayTradeProject = ()=>{
-       jayTradesProject.hidden = false
+       jayTradesProject.hidden = !jayTradesProject.hidden;
        kelvinProject.hidden = true;
        messageProject.hidden = true;
 }
@@ -133,9 +137,11 @@ let button = document.getElementById('gen-button');
 let messageProject = document.getElementById('msg-project-box');
     messageProject.hidden = true;
 
-//Events Handler Functions
+
+
+    //Events Handler Functions
 let displayMsgGenProject = ()=>{
-    messageProject.hidden = false;  
+    messageProject.hidden = !messageProject.hidden;  
     jayTradesProject.hidden = true;  
     kelvinProject.hidden = true;
 }
@@ -156,6 +162,9 @@ messageGenNav.addEventListener('click', displayMsgGenProject);
 let projectNavSectionHover = document.getElementById('sub-project-nav');
 let projectMainNavHover = document.getElementById('main-project-nav');
 let projectSubNav = document.getElementById('sub-project-nav');
+let subLinks = document.querySelectorAll('.sub-link'); 
+let body = document.body;
+
     projectSubNav.hidden = true;
 
 let displaySubProjectNav = ()=>{
@@ -167,6 +176,10 @@ let hideSubProjectNav = ()=>{
     projectSubNav.hidden = true;
 }
 
+subLinks.forEach(link=>{
+        link.addEventListener('click',()=>{ projectSubNav.hidden = true;}); 
+})
 
 projectMainNavHover.addEventListener('mouseover', displaySubProjectNav);
 projectNavSectionHover.addEventListener('mouseleave', hideSubProjectNav);
+body.addEventListener('click', hideSubProjectNav );
