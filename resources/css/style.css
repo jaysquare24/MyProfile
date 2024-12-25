@@ -13,6 +13,7 @@ body{box-sizing: border-box;
     
 
 }
+/* Index html styling*/
 header{box-sizing: border-box;
     background-color: rgb(1, 1, 26);
     color: whitesmoke;
@@ -35,8 +36,7 @@ h1, h2, h3, h4, h6{ font-family: Georgia;
 }
 
 h1, h2, h3, li, h5,p{
-    margin-left: 40px;
-    
+    margin-left: 40px; 
 }
 
 
@@ -46,14 +46,11 @@ nav {
     justify-self: end;
     margin-right: 80px;
     display: inline-flex;
-    
-
 }
 
 #sub-project-nav a{
     display: block;
-    margin-top: 5px;
-     
+    margin-top: 5px;    
 }
 
 #sub-project-nav{

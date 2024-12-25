@@ -1,18 +1,20 @@
-
-//Final variable declarattion
-const fomulaA = 9;
-const  fomulaB = 5;
-const fomulaC= 32;
-const diffKC= 273;
-// Other variablest
+// KELVIN TO FAHRENHEIT CONVERTER PROJECT
+// Dom Variables
 let kelvinNav = document.getElementById('kelvin-nav');
 let runConverterClick = document.getElementById('run-converter');
 let kelvinProject = document.getElementById('kelvin-display');
 let submitButton = document.getElementById('submit');
 let kelvinInput = document.getElementById('kelvin-input');
 
+//Final variable declarattion
+const fomulaA = 9;
+const  fomulaB = 5;
+const fomulaC= 32;
+const diffKC= 273;
+
+// Other Variable
 let kelvin;
-   kelvinProject.hidden = true;
+kelvinProject.hidden = true;
 
  
 //  Fahrenheit converter function
@@ -22,7 +24,7 @@ const calculateFahreheit = () => {
     return   fahrenheit;
 } 
 
-//Event function code 
+//Events Handler Functions 
 let displayAnswer = (event)=>{
     event.preventDefault();
     let answer= document.getElementById('result');
@@ -36,9 +38,6 @@ let displayAnswer = (event)=>{
     // Display the Fahrenheit value
     answer.innerHTML = `The Fahrenheit equivalent is: ${calculateFahreheit()} \u00B0F `;      
 }
-
-
-//Events Handler Functions
 
 let displayCoverterProject = ()=>{
     kelvinProject.hidden = !kelvinProject.hidden;
@@ -54,17 +53,22 @@ kelvinNav.addEventListener('click', displayCoverterProject);
 
 
 //JAYTRADES PROJECT JAVASCRIPT CODE
+//Dom variables
 let jayTradesNav = document.getElementById('jaytrades-nav');
 let viewProjectClick = document.getElementById('view-project');
 let jayTradesProject = document.getElementById('jaytrades-project-img')
-    jayTradesProject.hidden = true;
 
+//Other Variables
+jayTradesProject.hidden = true;
+
+//Events Handler Functions
 let displayJayTradeProject = ()=>{
        jayTradesProject.hidden = !jayTradesProject.hidden;
        kelvinProject.hidden = true;
        messageProject.hidden = true;
 }
 
+//Event Listeners
 viewProjectClick.addEventListener('click', displayJayTradeProject);
 jayTradesNav.addEventListener('click', displayJayTradeProject);
 
@@ -165,8 +169,10 @@ let projectSubNav = document.getElementById('sub-project-nav');
 let subLinks = document.querySelectorAll('.sub-link'); 
 let body = document.body;
 
-    projectSubNav.hidden = true;
+//Other variable
+projectSubNav.hidden = true;
 
+//Events Handler Functions
 let displaySubProjectNav = ()=>{
     projectSubNav.hidden = false;
     
@@ -180,7 +186,7 @@ subLinks.forEach(link=>{
         link.addEventListener('click',()=>{ projectSubNav.hidden = true;}); 
 })
 
+// Add Events Listener
 projectMainNavHover.addEventListener('mouseover', displaySubProjectNav);
 projectNavSectionHover.addEventListener('mouseleave', hideSubProjectNav);
-
 body.addEventListener('click', hideSubProjectNav );
