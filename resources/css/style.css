@@ -49,6 +49,7 @@ body{
     margin-top: auto;
     margin-left: 10%;
     display: block;
+    
 
    
     
@@ -56,6 +57,7 @@ body{
 }
 
 .home-nav img {
+    vertical-align: middle;
     animation: color-rotate 2s infinite; /* 2-second infinite animation */
     &:hover{
         scale: 1.08;
@@ -76,7 +78,7 @@ body{
 
 .navigation{
     box-sizing: border-box;
-    justify-items: end;
+    justify-items: flex-end;
     padding-right: 10%;
     
    
@@ -109,11 +111,14 @@ a:hover{
     width: 100%;
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns:  60% 40%;
+    grid-template-columns:  45% 40%;
     background-color:rgb(1, 1, 26); 
     margin-top: 40px;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
+    justify-content: space-between;
+
+    border: 1px solid white;
    
    
 }
@@ -121,23 +126,23 @@ a:hover{
 .footer-image-container{
     box-sizing: border-box;
     align-items:center;
+    justify-content: space-evenly;
     display: inline-flex;
-    margin-left: 10%;
+    margin-left: 3%;
+    
+    border: 1px solid white;
    
     
 }
 
-.item{
-    margin-right: 6%;
-}
-
-
-
 .copyright{
-    justify-self: end;
+    justify-items: end;
     margin-right: 15%;
+    
     color:white;
     font-size: small;
+
+    border: 1px solid white;
    
     
 }
@@ -546,8 +551,14 @@ form button{
 /*Media queries*/
 
 @media only screen and (max-width: 768px) {
+
+    .navigation{
+        border: 1px solid white;
+    }
     .menu-button {
-        display: block;
+        border: 1px solid white;
+        display: flex;
+        justify-self: flex-end;
     }
 
     .other-nav {
@@ -645,12 +656,13 @@ form button{
     .footer{
         width: 100%;
         display: block; 
+        justify-content: center;
        
     }
 
     .footer-image-container{
         width: 100%;
-        justify-content:space-around;
+        justify-content:space-evenly;
         display: inline-flex;
         margin-left: 0%;
         margin-top: 0.6rem;
@@ -658,13 +670,10 @@ form button{
         
     }
 
-    .item{
-        margin-right: 0%;
-    }
-
+    
     .copyright{
         margin-right: 0%;
-       justify-self: center;
+       justify-items: center;
        
     }
 
@@ -769,33 +778,33 @@ form button{
     }
 
     #fb-toolbutton{
-        background-image: url('/resources/clone-facebook-image.png');
+        background-image: url('../clone-facebook-image.png');
 
     }
 
     #club-toolbutton{
-        background-image: url('/resources/South-run-club.png');    
+        background-image: url('../South-run-club.png');    
 
     }
 
     #vc-toolbutton{
-        background-image: url('/resources/VC-experience.png');
+        background-image: url('../VC-experience.png');
     }
 
     #teacozy-toolbutton{
-        background-image: url('/resources/teacozy.png');
+        background-image: url('../teacozy.png');
     }
 
     #expense-toolbutton{
-        background-image: url('/resources/expense2.png');
+        background-image: url('../expense2.png');
     }
 
     #reddit-toolbutton{
-        background-image: url('/resources/reddit-image.png');
+        background-image: url('../reddit-image.png');
     }
 
     #recipe-toolbutton{
-        background-image: url('/resources/favRecipe2.png');
+        background-image: url('../favRecipe2.png');
     }
 
     #fb-toolbutton,
@@ -910,6 +919,9 @@ form button{
         
     }
 
+    button{
+        justify-self: center;
+    }
     
    
        
