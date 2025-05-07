@@ -1,98 +1,395 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">  
-        <title>projects</title>
+        <title>Projects | Jamiu Olajide | Web Developer</title>
         <link rel="stylesheet" href="resources/css/style.css" type="text/css"/>
        
     </head>
+
     <body>
-        <header>
-            <div class="name">
-                <h1>J.O Olajide</h1>
-            </div>
-            <nav class="project-nav">
-                <a href="index.html">Home</a>
-                <div id="project-nav-section">
-                  <a  id="main-project-nav" href="#my-projects">Projects</a>
-                  <ul id="sub-project-nav">
-                    <li><a href="#kelvin-project" id="kelvin-nav"  class="sub-link">Fahrenheit converter</a></li>
-                    <li><a href="#jaytrades-project" id="jaytrades-nav" class="sub-link">JayTrades Platform</a></li>
-                    <li><a href="#msg-gen-project" id="msg-gen-nav" class="sub-link">Message Generator</a></li>
-                  </ul>
-                </div>
-                <a href="#contacts">Contacts</a>
-            </nav>
-        </header>
-        <main class="project-main">
-           <h2 id="my-projects">My Projects</h2>
-           <div class="kelvin-project" id="kelvin-project" role="presentation">
-              <h3 id="kelvin-project-page" >Kelvin to Fahrenheit Converter</h3>
-              <p>This project is a simple yet functional web-based temperature converter that allows users to convert temperatures from Kelvin to Fahrenheit seamlessly. Users can input a Kelvin value via a query parameter in the URL, and the application calculates and displays the equivalent Fahrenheit value instantly upon submission. Built using HTML, JavaScript, and basic CSS, the project demonstrates dynamic interaction with URL parameters, event handling, and mathematical computations in a user-friendly interface. <span id="run-converter" >Convert Kelvin to Fahrenheit.</span></p>
-              <div class="kelvin-display" id="kelvin-display">
-                   <div aria-label=" kelvin converter project">
-                     <h4>Kelvin to Fahrenheit Converter</h4>
-                      <form action="index.html"  method="GET">
-                        <label for="kelvin-input" >Enter the kelvin Value</label>
-                        <input type="number" id="kelvin-input" name="kelvin-input" required>
-                        <br><br>
-                        <button id="submit">convert</button>
-                      </form>
-                   </div>
-                   <p id="result"></p>
-               </div>
-           </div>
-           <div class="jaytrades-project" id="jaytrades-project">
-              <h3>JayTrades Digital Payment and Gift Card Platform</h3>
-              <p>This project is a responsive web interface for JayTrades, a platform offering services such as buying and selling gift cards, paying bills, acquiring gadgets, and obtaining virtual dollar cards. The homepage features a welcoming section introducing the platform, a user-friendly login form for account access, and a call-to-action for new users to create an account. The site emphasizes simplicity, security, and financial empowerment, making it an ideal solution for modern digital transactions. Built using HTML and styled with CSS, this project showcases clean design and intuitive user navigation.<span id="view-project">View JayTrades platform Interface.</span></p>
-              <div id="jaytrades-project-img">
-                <img  src="resources/jaytrades.png" alt="jay trades project image"/>
-              </div>
-           </div>
-           <div class="msg-gen-project" id="msg-gen-project">
-               <h3>Random Inspirational Message Generator</h3>
-               <p>This project generates a random collection of inspirational messages based on predefined lessons. It uses JavaScript to randomly select and compile messages from three thematic categories: love, temptation, and self-discovery. A getRandom function ensures the selection is unpredictable, and a loop dynamically constructs the output. The final message is formatted and displayed in the console, offering users unique motivational insights each time the program is run. This project demonstrates foundational programming concepts like object traversal, randomization, and string manipulation in an engaging way. <span id="run-message">Generate Inspirational Message</span></p>
-              <div id="msg-project-box">
-                   <h4 id="ins-tittle">Inspirational Message Generator</h4>
-                   <div id="msg-display-box">
-                      <p id="msg-display">Welcome! <br>Click the button below to get your Message.</p>    
-                   </div>
-                   <button id="gen-button" type="button">Get Your Message</button>
-               </div>
-           </div>
-        </main>
-        <footer>
-            <div id="contacts">
-               <h3>Contacts</h3>
-               <div class="contacts-info" role="presentation">
-                  <div class="email">
-                    <p>Email Address:</p>
-                    <p>olajidejamiu24@gmail.com</p>
-                  </div>
-                  <div class="num">
-                    <p>Phone Num:</p>
-                    <p>+234 706 3445 7926</p>
-                  </div>
-                  <div class="git">
-                    <p>Git-Hub/Linked-In:</p>
-                  <p>Jamiu Olajide</p>
-                  </div>
-                </div>
-                <div id="contact-image-copyright-container">
-                    <div class="contact-image">
-                        <a href="https://wa.me/2347063457926?text=Hello%20I%20want%20to%20contact%20you!" target="_blank"><img src="resources/Whatsapp-Logo-Png.png"/></a>
-                        <a href="https://www.facebook.com/jamiu4flex" target="_blank"><img src="resources/facebook-logo-.png"/></a>
-                        <a href="https://www.linkedin.com/in/jamiu-olajide-795444185" target="_blank"><img src="resources/linkedin-logo-hd-png-.png"/></a>
-                      <a href="https://github.com/jaysquare24" target="_blank"><img src="resources/github_PNG28.png"/></a>
-                    </div>
+
+        <header role="banner">
+
+            <nav class="header-nav" role="navigation" aria-label="Main navigation">
+
+                <nav class="home-nav">
+                  <a href="home.html" aria-label="Go to home page"><img src="resources/icons8-j-64.png" width="30px" alt="Home icon" /></a>
+                </nav>
+                
+               
+                <div class="navigation">
                     <div>
-                        <P class="copyright">copyright &copy; - All Rights Reserved by Olajide</P>
+                        <button class="menu-button" id="menu-button" aria-label="Toggle navigation menu"> <img id="menu-icon" src="resources/icons8-menu-24.png" alt="Menu icon"/></button>
                     </div>
+                    <nav class="other-nav" id="hidden" role="navigation" aria-label="Secondary navigation">
+                        <a href="home.html" aria-label="Navigate to Home page">Home</a>
+                        <a id="abme" href="aboutme.html" aria-label="Navigate to About Me page">About me</a>
+                        <a href="resume.html" role="menuitem">Resumé</a>
+                        <a href="contact.html" aria-label="Navigate to Contacts page">Contacts</a>
+                    </nav>
                 </div>
+               
+            </nav>
+            
+        </header>
+
+        <main class="project-main" role="main">
+            
+            <div id="project-intro">
+                <h1 class="project-header">Projects.</h1>
+                <p>Here you will find some of the personal projects that I created with each project containing its own GitHub link and live link.</p>
             </div>
+            
+            <section class="project-section" id="facebook" aria-labelledby="facebook-header">
+
+                <div class="project-group">
+
+                    <div class="project-image-container">
+                        <picture>
+                            <source media="(max-width: 800px)" srcset="resources/facebookMobile.png" alt="Screenshot of Facebook login interface clone">
+                            <img class="project-image" src="resources/clone-facebook image.png" alt="Screenshot of Facebook login interface clone">
+                        </picture>
+                    </div>
+
+                    <div class="description">
+
+                       <h2 id="facebook-header">Cloned Facebook Log-In Interface</h2>
+                       <div id="description-paragraphs">
+                          <p>I recreated the Facebook web app login interface. The experience of showcasing my frontend skills by rebuilding the interface turned out to be both exciting and rewarding.</p>
+                          <p>Using my frontend development tools, I ensured the UI is fully responsive and works seamlessly across all devices.</p>
+                          <p>Feel free to explore the project by visiting the live link!</p>
+                       </div>
+                       
+                       <div id="fb-toolbutton">
+                            <h3>Tools used</h3>
+                            <div class="tools-list">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <P>JavaScript</P>
+                                <p>Git</p>
+                                <p>GitHub</p>
+                                <p>Netlify</p>
+                            </div>
+                        
+
+                            <div class="project-links-container">
+                                <a id="project-link" href="https://github.com/jaysquare24/facebook-project" target="_blank" aria-label="View Facebook project on GitHub">GIT-HUB</a>
+                                <a id="project-link" href="https://clone-fb-interface-practical.netlify.app/" target="_blank" aria-label="View live Facebook project">LIVE LINK</a>
+                            </div>
+
+                       </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="project-section" id="club-website" aria-labelledby="club-header">
+
+                <div class="project-group">
+
+                   <div class="project-image-container">
+                        <picture>
+                            <source media="(max-width: 800px)" srcset="resources/athleticMobile.png" alt="Screenshot of South Village Run Club website">
+                            <img class="project-image" src="resources/South-run-club.png" alt="Screenshot of South Village Run Club website">
+                        </picture>    
+                   </div>
+
+                   <div class="description">
+                       <h2 id="club-header">South Village Run Club Website</h2>
+                       <div id="description-paragraphs">
+                          <p>This website is a practical work, it is a fully responsive website designed for athletic club events. I built it using my frontend development expertise, ensuring it works seamlessly on all devices.</p>
+                          <p>Feel free to explore the project by visiting the live link!</p>
+                       </div>
+                       <div id="club-toolbutton">
+                            <h3>Tools used</h3>
+                            <div class="tools-list">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <P>JavaScript</P>
+                                <p>Git</p>
+                                <p>GitHub</p>
+                                <p>Netlify</p>
+                            </div>
+
+                            <div class="project-links-container">
+                                <a id="project-link" href="https://github.com/jaysquare24/Athletic-club" target="_blank" aria-label="View South Village Run Club project on GitHub">GIT-HUB</a>
+                                <a id="project-link" href="https://jay-athletic-club.netlify.app/" target="_blank" aria-label="View live South Village Run Club project">LIVE LINK</a>
+                            </div>
+                       </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="project-section" id="vc-experience-website" aria-labelledby="vc-header">
+
+                <div class="project-group">
+
+                   <div class="project-image-container">
+                        <picture>
+                            <source media="(max-width: 800px)" srcset="resources/VCmobile.png" alt="Screenshot of VC Experience Enterprise website">
+                            <img class="project-image" src="resources/VC experience.png" alt="Screenshot of VC Experience Enterprise website">  
+                        </picture>
+                   </div>
+
+                   <div class="description">
+                       <h2 id="vc-header">The VC Experience Enterprise Website</h2>
+                       <div id="description-paragraphs">
+                          <p>The VC Experience is a static website showcasing a mobility technology portfolio. It highlights the company's mission, portfolio, investment team, and contact details. Designed for seamless accessibility, it is fully responsive across all devices.</p>
+                          <p>Feel free to explore the site by visiting the live link!</p>
+                       </div>
+                       
+                       <div id="vc-toolbutton">
+                            <h3>Tools used</h3>
+                            <div class="tools-list">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <P>JavaScript</P>
+                                <p>Git</p>
+                                <p>GitHub</p>
+                                <p>Netlify</p>
+                            </div>
+
+                            <div class="project-links-container">
+                                <a id="project-link" href="https://github.com/jaysquare24/the-vc-enterprise" target="_blank" aria-label="View VC Experience Enterprise project on GitHub">GIT-HUB</a>
+                                <a id="project-link" href="https://vc-enterprise.netlify.app/" target="_blank" aria-label="View live VC Experience Enterprise project">LIVE LINK</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="project-section" id="teacozy-website" aria-labelledby="teacozy-header">
+
+                <div class="project-group">
+
+                   <div class="project-image-container">
+                        <picture>
+                            <source media="(max-width: 800px)" srcset="resources/teacozyMobile.png" alt="Screenshot of Tea Cozy website">
+                            <img class="project-image" src="resources/teacozy.png" alt="Screenshot of Tea Cozy website">
+                        </picture>
+                   </div>
+
+                   <div class="description">
+                       <h2 id="teacozy-header">The Tea Cozy Website</h2>
+                       <div id="description-paragraphs">
+                          <p>The Tea Cozy  website is a static website that showcases a variety of healthy teas. It highlights the company's mission, featured teas, locations, and contact details. Built for a smooth user experience, it is fully responsive across all devices.</p>
+                          <p>Feel free to explore the site by visiting the live link!</p>
+                       </div>
+
+                       <div id="teacozy-toolbutton">
+                            <h3>Tools used</h3>
+                            <div class="tools-list">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Git</p>
+                                <p>GitHub</p>
+                                <p>Netlify</p>
+                            </div>
+
+                            <div class="project-links-container">
+                                <a id="project-link" href="https://github.com/jaysquare24/Tea-Shop-project" target="_blank" aria-label="View Tea Cozy project on GitHub">GIT-HUB</a>
+                                <a id="project-link" href="https://jay-tea-shop.netlify.app/" target="_blank" aria-label="View live Tea Cozy project">LIVE LINK</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="project-section" id="expense-tracker" aria-labelledby="expense-tracker">
+
+                <div class="project-group">
+
+                   <div class="project-image-container">
+                       <picture>
+                         <source media="(max-width: 800px)" srcset="resources/expense2.png">
+                         <img class="project-image" src="resources/expense1.png" alt="Screenshot of Expense tracker web app">
+                        </picture>
+                    </div>
+
+                   <div class="description">
+                       <h2 id="expense-header">Expense Tracker App</h2>
+                       <div id="description-paragraphs">
+                          <p>Expense Tracker is a user-friendly web application built with React and Redux that helps you manage your personal finances. Track your income and expenses, categorize transactions, and gain insights into your spending habits with an intuitive interface. </p>
+                          <p>Feel free to explore the current state of the project by visiting the live link!</p>
+                       </div>
+
+                       <div id="expense-toolbutton">
+                            <h3>Tools used</h3>
+                            <div class="tools-list">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <P>JavaScript</P>
+                                <p>React</p>
+                                <p>Redux</p>
+                                <p>Git</p>
+                                <p>GitHub</p>
+                                <p>Netlify</p>
+                            </div>
+
+                            <div class="project-links-container">
+                                <a id="project-link" href="https://github.com/jaysquare24/Expense-Tracker" aria-label="View Expense tracker project on GitHub" target="_blank">GIT-HUB</a>
+                                <a id="project-link" href="https://jay-expensetracker.netlify.app/" aria-label="View live Expense tracker project" target="_blank">LIVE LINK</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="project-section" id="reddit-client-app" aria-labelledby="reddit-client-app">
+
+                <div class="project-group">
+
+                   <div class="project-image-container">
+                       <picture>
+                            <source media="(max-width: 800px)" srcset="resources/redditMobile.png" alt="Screenshot of reddit-client-app">
+                            <img class="project-image" src="resources/Screenshot (25).png" alt="Screenshot of reddit-reddit-app">
+                       </picture>
+                   </div>
+
+                   <div class="description">
+                       <h2 id="reddit-header">Reddit Client Web App</h2>
+                       <div id="description-paragraphs">
+                          <p> This is a React-based web application that allows users to browse and search Reddit posts. This project demonstrates the use of modern React features, including hooks, state management with Redux, routing with React Router, and API integration.</p>
+                          <p>Feel free to explore the current state of the project by visiting the live link!</p>
+                       </div>
+
+                       <div id="reddit-toolbutton">
+                            <h3>Tools used</h3>
+                            <div class="tools-list">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <P>JavaScript</P>
+                                <p>React</p>
+                                <p>Redux</p>
+                                <p>Git</p>
+                                <p>GitHub</p>
+                                <p>Netlify</p>
+                            </div>
+
+                            <div class="project-links-container">
+                                <a id="project-link" href="https://github.com/jaysquare24/reddit-app" aria-label="View Reddit client project on GitHub" target="_blank">GIT-HUB</a>
+                                <a id="project-link" href="https://jay-redditclient.netlify.app/" aria-label="View live reddit client project" target="_blank">LIVE LINK</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            
+            
+
+            <section class="project-section" id="recipe-app" aria-labelledby="pet-header">
+
+                <div class="project-group">
+
+                   <div class="project-image-container">
+                       <picture>
+                            <source media="(max-width: 800px)" srcset="resources/favRecipe1.png" alt="Screenshot of recipe web app">
+                            <img class="project-image" src="resources/favRecipe2.png" alt="Screenshot of recipe web app">
+                       </picture>
+                   </div>
+
+                   <div class="description">
+                       <h2 id="recipe-header">Recipe Web App</h2>
+                       <div id="description-paragraphs">
+                          <p> This web app is a work in progress, designed for pet lovers to easily adopt their desired pets. Updates will be continuously deployed to keep viewers informed of its development.</p>
+                          <p>Feel free to explore the current state of the project by visiting the live link!</p>
+                       </div>
+
+                       <div id="recipe-toolbutton">
+                            <h3>Tools used</h3>
+                            <div class="tools-list">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <P>JavaScript</P>
+                                <p>React</p>
+                                <p>Redux</p>
+                                <p>Git</p>
+                                <p>GitHub</p>
+                                <p>Netlify</p>
+                            </div>
+
+                            <div class="project-links-container">
+                                <a id="project-link" href="#" aria-label="View Recipe project on GitHub" target="_blank">GIT-HUB</a>
+                                <a id="project-link" href="https://jay-recipe.netlify.app/" aria-label="View live Recipe project" target="_blank">LIVE LINK</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <a id="arrow-links" href="resume.html" aria-label="Navigate to Resume page">
+                Let's go to my Resumé
+                <img id="gif" src="./resources/icons8-advance-unscreen.gif" alt="Animated arrow pointing to resume page">
+            </a>
            
-        </footer>
-        <script src="script.js" async></script>
+        </main>
+
+        <footer role="contentinfo">
+
+            <div class="footer">
+
+                <div class="footer-image-container">
+
+                    <div class="item">
+                        <a href="https://wa.me/2347063457926?text=Hello%20I%20want%20to%20contact%20you!" target="_blank" aria-label="Contact via WhatsApp"><img src="resources/icons8-whatsapp-50.png" width="30px" height="25px" alt="WhatsApp icon"/></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="http://be.net/jamiuolajide" target="_blank" aria-label="Visit Behance profile"><img src="resources/icons8-behance-50.png" width="30px" height="25px" alt="Behance icon"/></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://www.linkedin.com/in/jamiu-olajide-795444185" target="_blank" aria-label="Visit LinkedIn profile"><img src="resources/icons8-linkedin-50.png" width="30px" height="25px" alt="LinkedIn icon"/></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://github.com/jaysquare24" target="_blank" aria-label="Visit GitHub profile"><img src="resources/icons8-github-50.png" width="30px" height="25px" alt="GitHub icon"/></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://dribbble.com/Jay-Codes" target="_blank" aria-label="Visit Dribbble profile"><img src="resources/icons8-dribbble-50.png" width="30px" height="25px" alt="Dribbble icon"/></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="https://x.com/leojaysquare?s=21&t=WLpQzOcBaptK1TCRdxXbBg" target="_blank" aria-label="Visit Twitter profile"><img src="resources/icons8-twitter-circled-50.png" width="30px" height="25px" alt="Twitter icon"/></a>
+                    </div>
+
+                </div>
+
+                <div class="copyright">
+                    <p>Copyright &copy; - All Rights Reserved by Olajide</p>
+                </div>
+
+            </div>
+
+      </footer>
+        <script src="menu.js" defer></script>
+        
     </body>
 </html>

@@ -4,19 +4,29 @@ html{
     
 }
 
-body{width:100%;}
-
-@media only screen and (max-width:1600px){
-body{box-sizing: border-box;
-    background-color: rgb(219, 219, 211);
+body{
+    box-sizing: border-box;
+    background-image: url('../About\ Me.png');
+    background-size: cover;
+    width:100%;
     margin: 0;
-    
 
 }
-/* Index html styling*/
-header{box-sizing: border-box;
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/*header styling*/
+
+.header-nav{box-sizing: border-box;
     background-color: rgb(1, 1, 26);
-    color: whitesmoke;
+    color: white;
     display: grid ;
     grid-template-rows: 100%;
     grid-template-columns: 6fr 6fr;
@@ -27,428 +37,884 @@ header{box-sizing: border-box;
     width: 100%;
     top: 0px;
     font-family: Arial;
+    padding-top: 1% ;
+    padding-bottom: 1%;
+    
    
-
-    
-}
-h1, h2, h3, h4, h6{ font-family: Georgia;
-
-}
-
-h1, h2, h3, li, h5,p{
-    margin-left: 40px; 
-}
-
-
-p, ul{ font-family: "Nunito Sans", sans-serif;}
-
-nav {
-    justify-self: end;
-    margin-right: 80px;
-    display: inline-flex;
-}
-
-#sub-project-nav a{
-    display: block;
-    margin-top: 5px;    
-}
-
-#sub-project-nav{
-    position: absolute;
-    background-color:  rgb(1, 1, 26) ;
-    padding: 10px;
-    
-}
-
-
-
-nav a{color: whitesmoke;
-      margin-right: 10px;
       
+}
+
+.home-nav{
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-left: 10%;
+    display: block;
+
+   
+    
+
+}
+
+.home-nav img {
+    animation: color-rotate 2s infinite; /* 2-second infinite animation */
+    &:hover{
+        scale: 1.08;
+    }
+}
+
+@keyframes color-rotate {
+    0% {
+        filter: brightness(0) invert(1); /* White */
+    }
+    50% {
+        filter: sepia(1) saturate(10) hue-rotate(60deg); /* Yellow */
+    }
+    100% {
+        filter: brightness(0) invert(1); /* White */
+    }
+}
+
+.navigation{
+    box-sizing: border-box;
+    justify-items: end;
+    padding-right: 10%;
+    
+   
+}
+
+
+.other-nav {
+    box-sizing: border-box;
+    display: inline-flex;
+    
+   
+    
+}
+
+.other-nav a{
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
 }   
 
-a:hover{ color:rgb(123, 123, 207)}
+a:hover{ 
+    color:rgb(123, 123, 207);
+    text-decoration:underline;
+}
 
+/*Footer styling*/
 
-.section-1{ box-sizing: border-box;
+.footer{
+    box-sizing: border-box;
     width: 100%;
     display: grid;
-    grid-template-columns: 10fr 2fr;
-    align-items: center; 
-    justify-items: center;
-   overflow: hidden;
-   margin-bottom: 20px;
+    grid-template-rows: 100%;
+    grid-template-columns:  60% 40%;
+    background-color:rgb(1, 1, 26); 
+    margin-top: 40px;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+   
+   
+}
+
+.footer-image-container{
+    box-sizing: border-box;
+    align-items:center;
+    display: inline-flex;
+    margin-left: 10%;
+   
     
 }
 
-#about-me{ 
-    padding-top:80px ;
+.item{
+    margin-right: 6%;
+}
 
+
+
+.copyright{
+    justify-self: end;
+    margin-right: 15%;
+    color:white;
+    font-size: small;
+   
+    
+}
+
+
+/*home page styling*/
+.image {
+    margin-top: 8rem;
+    width: 100%;   
+    
+}
+
+.image img{
+    width: 200px;
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 50% ;
+   
+}
+
+article{
+    width: 70% ;
+    margin: auto;
+    text-align: center;
+    color: white;  
+    
+}
+
+article h2{
+    margin-bottom: 30px;
+    word-spacing:1rem ;
+}
+ 
+article p{
+    font-size: 1.2rem ;
+    line-height:2rem ;
+}
+
+ 
+#arrow-links{
+    margin-left: 12rem;
+    color:white;
+    text-decoration: none;
+     
+}
+
+#gif{
+
+   
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    width: 38px;
+    filter: brightness(0) invert(1); /* Changes the color to white */
+}   
+ 
+
+
+/* about me html styling*/
+
+h1, h2, h3, h4, h6{ 
+    font-family: Georgia;
+}
+
+p{ 
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+
+.about-header,
+.project-header,
+.resume-header,
+.contact-header{
+    margin-top:8rem ;
+    margin-left: 13rem;
+    font-size: 3.3rem;
+    color: rgb(0, 0, 23);
+}
+
+#about-header{
+    margin-bottom: 0.2rem;
 }
 
 .message{ 
-         background-color: rgb(214, 213, 208);
-         border: 1px solid rgba(160, 156, 156, 0.911) ;
-         border-radius:5px ;  
-         padding-right: 10px;
-         margin-left: 40px;
-         margin-right: 1rem;
-         text-align: justify;
-}
-
-.image{justify-self: end;
-      
-}
-.section-1 img{width: 400px;
-    height: 400px;
-    margin-right: 20px;
-    margin-top: 150px;
-    
-    border-radius: 5%;
-}
-
-footer{ 
     box-sizing: border-box;
-    background-color: rgb(1, 1, 26);;
-        color: whitesmoke;
-        padding: 10px 10px;
-        margin-top: 30px;
+    color: white; 
+    width: 70%; 
+    margin: auto;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.message a{
+    color:  rgb(3, 3, 65) ;
+}
+
+.skills-section{
+    box-sizing: border-box;
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
 
 }
 
 
-.contacts-info{ width: 100%;
-              margin-top: -5px;
-              display: grid;
-              grid-template-rows:  100%;
-              grid-template-columns:  4fr 4fr 4fr;
-              align-content: center;
-              align-items: center; 
-              justify-items:start;
-              
-              
+.skills-header{
+    width: 20%;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    height: 50px;
+    color: rgb(0, 0, 23) ;
+    border-right: 1.5px solid rgb(0, 0, 23) ;;
+    padding-right: 2%;
+    margin-top: 2%;
+}
+
+.skills-list{
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:15px;
+    flex-basis: 75%;
+    height: 5%;
+    margin-bottom: 5rem;
+  
+}
+
+.skills-list p{
+    background-color: rgb(1, 1, 26); 
+    color:white;
+    padding: 0.7rem;
+    border-radius: 4px;
+}
+
+.skills-list img{
+    height: 1.14rem;
+    vertical-align: middle;
+}
+
+/* Project html styling*/
+.project-section{
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid  rgb(1, 1, 26);;
+    
+
+}
+
+#project-intro p,
+#resume-intro p,
+#contact-intro p{
+    margin-left: 13rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    color:white;
+}
+
+#project-intro p{
+    width: 80%;
+}
+
+
+.project-group{
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+    display:flex;
+   
+   
+    
+}
+
+.project-image-container{
+    box-sizing: border-box;
+    flex-basis: 50%;
+    margin: auto;
+    
+
+}
+
+.project-image{
+    
+    width: 100%;
+    height: 300px;
+    border-radius: 1rem;
+    
+}
+
+.description{
+    box-sizing: border-box;
+    flex-basis: 50%;
+    margin-left: 5%;
+}
+
+.description h2, .description h3{
+    color:  rgb(0, 0, 23);
+    
 }
 
 
 
-.Email p, .num p, .git p{
-     text-align: center;
+#description-paragraphs p{
+    font-size: 1.2rem ;
+    line-height:2rem ;
+    text-align: justify;
+    color: white;  
+  
 }
+
+.tools-list{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 5%;
+}
+
+.tools-list P{
+    background-color: rgb(1, 1, 26);
+    color: white;
+    padding: 0.7rem;
+    font-weight: bold;
+    border-radius: 5%;
+
+}
+
+.project-links-container{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 1.5rem;
+    justify-content: space-evenly;
+    
+}
+
+#project-link{
+    box-sizing: border-box;
+    flex-basis: 25%;
+    font-size: 0.7rem;
+    background-color:rgb(1, 1, 26);  
+    color: white;
+    padding: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    transition: scale 0.3s ease;
+
+    &:hover{
+        scale: 1.05;
+   }
+   
+   
+}
+
+
+
+#recipe-app{
+    padding-bottom: 0;
+    border-bottom: none;
+
+}
+
+
+/*Resume page styling*/
+#resume-intro a{
+    color: rgb(3, 3, 65) ;
+}
+
+.resume-file{
+    display: block;
+    justify-self: center;
+    margin-bottom: 3rem;
+    width:600px;
+    height:800px; 
+    border: none;
+    
+}
+
+/*Contact page style*/
+#contact-intro p{
+    width: 80%;
+    text-align: justify;
+
+}
+
+.contact-section{
+    box-sizing: border-box;
+    display: flex;
+    width: 70%;
+    margin: auto;
+     
+}
+
+.contacts-item1, .contacts-item2{
+    box-sizing: border-box;
+    padding: 5%;
+    width:50%;
+    font-weight: 600;
+    border-left: 3px rgb(1, 1, 26) solid ;   
+}
+
+.contacts-item1{
+    border:none ;
+    margin-right: 2rem;
+}
+
+.contacts-item1 h3, .contacts-item2 h3{
+    color:   rgb(0, 0, 23);
+}
+    
+.contacts-info{
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    border: 2px rgb(34, 34, 34) solid;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+   
+}
+
+.contacts-info p{ 
+    margin-bottom: 2rem;
+}
+
+.contact-title{
+    color:  white; 
+    font-weight: 800;
+    
+    
+
+}
+
+.contact-image-container{
+    box-sizing: border-box;
+}
+
+.contact-image-container p{
+    margin-bottom:1rem ;
+}
+
+.contact-image-item{
+    display: flex;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+
+.contact-image-item a{
+    margin-right: 2rem;
+}
+
+form input, form textarea {
+    width: 100% ;
+    padding: 0.9rem;
+    margin-bottom: 0.7rem;
+    font-size:1.2rem ;
+    color:white;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    
+}
+
+::placeholder{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form button{
+    background-color: rgb(1, 1, 26) ;
+    color: white;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    justify-self: center;
+}
+
 .contact-image img{width: 40px;
                     height: 30px;
-                margin-left: 40px;
-}
-
- #contact-image-copyright-container{
-                width: 100%;
-                margin-top: 20px;
-                display: grid;
-                 grid-template-rows:  100%;
-                 grid-template-columns:  50% 50%;
-                 align-content: center;
-                 align-items: center; 
-                 
- }  
                 
-.copyright { justify-self: end;
-             margin-right: 80px;
-
-}             
-/* Project html styling*/
-
-.kelvin-project, .jaytrades-project, .msg-gen-project{
-    margin-right: 40px;
-    text-align:justify ;
-    margin-bottom: 40px;
 }
-.project-main{
+
+.footer-contact-copyright{
     box-sizing: border-box;
-    margin-top: 110px;
-
-}
-#jaytrades-project-img{  box-sizing: border-box;
-                         max-width: 400px;
-                         min-width: 250px;
-                     
-               justify-self: center;
-}
-
-#jaytrades-project-img img{  width: 100%;
-                            height: auto;
-                     
-    
+    width: 100%;
+    background-color:rgb(1, 1, 26); 
+    margin-top: 40px;
+    color: white;
+    font-size: small;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    text-align: center;
+    font-family: Arial;   
 }
 
+       
 
 
 
-.kelvin-display{ box-sizing: border-box;
-                 width: 300px;
-                 justify-self: center;
-                 text-align:center;
-                 background-image: url("../converterImage.jpg");
-                 color: whitesmoke;
-                 background-size: cover;
-                 background-position: 0px;
-                 border-radius: 20px;
-                 border: 2px solid black;
-                 
-                 
-                 
-}
+/*Media queries*/
 
-.kelvin-display #result{
-   margin-left: auto ;
-}
+@media only screen and (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
 
-#msg-project-box{ box-sizing: border-box;
-                 width: 400px;
-                 justify-self: center;
-                 border: 2px solid black;
-                 text-align:center;
-                 border-radius: 20px;
-                 background-image: url("../inspi.jpeg");
-                 background-size:cover;
-                 background-position:0px;
-}
+    .other-nav {
+        display: none;
+       
+    }
 
-#msg-display-box{
-                 min-width: 250px;
-                 max-width: 350px;
-                 min-height: 70px;
-                 max-height: 130px;
-                 justify-self: center;
-                 text-align:center;
-                 border: 2px solid rgb(33, 32, 32);
-                 background-color: rgb(49, 47, 47);
-                 opacity: 90%;
-                 border-radius:10px ;
-                padding-left: 15px;
-                 
-
-}
-#msg-display{margin-right: 25px;
-            color: whitesmoke;
-            
-}
-
-#gen-button{margin: 10px;
-}
-
-#ins-tittle{ color: rgb(231, 231, 231);
-     font-family: sans-serif;
-
-}
-#run-message, #view-project, #run-converter{color:rgb(8, 50, 140);
-             text-decoration: underline;
-
-}
-
-
-#run-message:hover, #view-project:hover, #run-converter:hover { 
-    cursor: pointer;
-    
-}
-
-}
-
-@media only screen and (max-width: 780px ){
-
-
-    .section-1{ 
-        width: 100%;
-        display:block;
-        margin-right: 0px;
-        grid-template-columns: none;
+    .other-nav#hidden {
+        box-sizing: border-box;  
+        position:absolute;
+        background-color:  rgb(1, 1, 26) ;
+        width: 50%;     
+        padding-top: 2%; 
+        padding-left: 2%;
+  
         
-            
     }
 
-    .message p{ 
+    .other-nav#hidden a{ 
+        display: block; 
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+        padding-right: 15%; 
+        padding-bottom: 5%;
+        border-bottom: 2px solid  rgba(123, 122, 122, 0.523);
+        width: 80%;
        
-        margin-left:10px;    
-    }
-    .message{
-        margin-right: 40px;
-    }
-    .image{ 
-        width: auto;
-        align-content:normal;
-       justify-self: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
        
-    }
- 
-    .copyright{
-        font-size: 0.6rem;
-        justify-self: end;
-
     }
 
-    .image img{ width: 500px;
-        height:400px;
-        margin-top: 0px;
-       
-     }
-    
+    .other-nav#hidden a:last-child {
+        border-bottom: none; /* Remove border-bottom for the last link */
+    }
+
     
 
+    .about-header,
+    .project-header,
+    .resume-header,
+    .contact-header{
+        margin-left: 5.5rem;
+        
+    }
+
+    #project-intro p,
+    #resume-intro p,
+    #contact-intro p{
+        margin-left: 5.5rem;
+    }
+
+    #arrow-links{
+        margin-left: 5.5rem;
+        
+        
+    }
+
+    .skills-section{
+        display: block;
+
+    }
+
+    .skills-header{
+        width: 100%;
+        text-align: center;
+        border: none;
+        height: 16px;
+        
+    }
+
+    .skills-list{
+
+       flex-basis: 100%;
+       margin-bottom: 3rem;
+    }
+
+    #project-link{
+        flex-basis: 40%;
+    }
+
+    .contact-section{
+        width: 85%;
+    }
+
+    .contacts-item1, .contacts-item2{
+        width:50%;
+    }
+
+    
 }
+
 
 @media only screen and (max-width: 480px ){
 
-    body{width: 100%;
-
-    }
-
-    header{ width: 100%;
-         grid-template-rows: 90%;
-         grid-template-columns: 6fr 6fr;
-
-    }
-    .name{ width: 100%;
-        margin-left: 20px;
-        font-size: 0.5rem;
-        margin-right: 100px;
-    }
-
-    .home-nav{  
-        margin-left: 20px;
-         width: 100%;
-         font-size: 0.75rem;
-        justify-self:normal;
-        
-    }
-    
-       
-    
-    
-    .section-1{ 
-        width: 95%;
-        display:block;
-        margin-right: 0px;
-        grid-template-columns: none;
-        margin-top: -30px;
-       
-        
-        
-    }
-    .section-1, .section-2, #contacts{
-        margin-left: 20px;
-    }
-    
-
-    .message{ 
-        width:auto;
-        text-align:justify;
-        margin-left: 0px;
-        margin-right: 16px;
-        padding-left: 10px;
-        
-        
-    }
-    .image{ 
-        width: 350px;
-        align-content:normal;
-       justify-self: center;
-       margin-left: 5px;
-       margin-right: 35px;
-        margin-top:20px ;
-        margin-bottom: 20px;
-        
-        
-    }
-
-    .image img{ width: 100%;
-        margin-top: 0px;
-        padding-top: 0px;
-        margin-right: 10px;
-         margin-left: 10px;     
-        justify-self: center;
+    .footer{
+        width: 100%;
+        display: block; 
        
     }
-    h1, h2, h3, li, h5,p{
-        margin-left: 0;
+
+    .footer-image-container{
+        width: 100%;
+        justify-content:space-around;
+        display: inline-flex;
+        margin-left: 0%;
+        margin-top: 0.6rem;
+         
         
     }
-   
-    footer{
-        width:100%;
-        
-    }
-    .git{
-        justify-self: unset;
-    }
-   
-    .email p, .num p, .git p{
-        display: inline-block;
-        font-size: 0.9rem;
+
+    .item{
+        margin-right: 0%;
     }
 
     .copyright{
-        margin-top: 30px;
-        font-size: 0.5rem;
-        justify-self: center;
-    }
-
-    .contacts-info{
-        width: 100%;
-        display:block;
-    }
-
-    #contact-image-copyright-container{
-        width: 100%;
-        display:block;
-    }
-    
-    .contacts-info, #contact-image-copyright-container{
-        margin-left: 1.2rem;
-    }
-
-    .contact-image img{
-        margin-left: 0.2rem;
-    }
-
-    .project-nav{  
-
-        width: 1rem;
-        margin-left: 40px;
-        font-size: 0.7rem;
-       justify-self:normal;
-    }
-    .project-main{ width:98%;
-        margin-left: 20px;
-        margin-top: 80px;
-    }
-    .kelvin-project, .jaytrades-project, .msg-gen-project{
+        margin-right: 0%;
+       justify-self: center;
        
-        margin-right: 30px;
-        margin-bottom: 40px;
     }
 
-    .kelvin-display{ box-sizing: border-box;
-                 width:auto;
-                 justify-self: center;
-                 text-align:center;
+   /* home style*/
+    article{
+        width: 90% ;
+        text-align:center; 
+        
     }
 
+    article h2{
+        text-align: center;
+    }
+
+    #arrow-links{
+        width: 50%;
+        margin-left: 5%;
+        
+    
+    }
+
+
+    /*About me style*/
+
+    .about-header,
+    .project-header,
+    .resume-header,
+    .contact-header{
+        margin-left: 1rem;
+        
+    }
+       
+    .message{ 
+         
+        border: none;
+        width: 95%; 
+        padding: 1rem;
+        text-align:left;
+        
+        
+    }
+
+    .skills-section{
+        display: block;
+
+    }
+
+    .skills-header{
+        width: 100%;
+        text-align: center;
+        border: none;
+        height: 16px;
+        
+    }
+
+    .skills-list{
+
+       flex-basis: 100%;
+       justify-content: space-evenly;
+       margin-bottom: 3rem;
+    }
+
+
+    /*Project style*/
+
+    .header-nav{
+        z-index: 3;
+    }
+    .project-group{
+        width: 90%;
+        display:block;  
+           
+    }
+
+    #project-intro p,
+    #resume-intro p,
+    #contact-intro p{
+    margin-left: 1rem;
+    
+    }
+
+    .project-image-container{
+        display: none;
+    }
+
+    .description{
+        margin-left:0;
+        width: 100%;
+        
+    }
+    
+    .description h3{
+        color:  white;
+        
+    }
+     
+    #description-paragraphs p{
+        font-size: 1.1rem ;
+        text-align: left;
+          
+      
+    }
+
+    #fb-toolbutton{
+        background-image: url('/resources/clone-facebook image.png');
+
+    }
+
+    #club-toolbutton{
+        background-image: url('/resources/South-run-club.png');    
+
+    }
+
+    #vc-toolbutton{
+        background-image: url('/resources/VC\ experience.png');
+    }
+
+    #teacozy-toolbutton{
+        background-image: url('/resources/teacozy.png');
+    }
+
+    #expense-toolbutton{
+        background-image: url('/resources/expense2.png');
+    }
+
+    #reddit-toolbutton{
+        background-image: url('/resources/Screenshot\ \(25\).png');
+    }
+
+    #recipe-toolbutton{
+        background-image: url('/resources/favRecipe2.png');
+    }
+
+    #fb-toolbutton,
+    #club-toolbutton,
+    #vc-toolbutton,
+    #teacozy-toolbutton,
+    #recipe-toolbutton,
+    #reddit-toolbutton,
+    #expense-toolbutton{
+        box-sizing: border-box;
+        position: relative; 
+        width: 100%;
+        height: auto;
+        border-radius: 1rem; 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0.7rem;
+        overflow: hidden; 
+    
+    }
+
+
+   #fb-toolbutton::before, 
+   #club-toolbutton::before,
+   #vc-toolbutton::before,
+   #teacozy-toolbutton::before,
+   #recipe-toolbutton::before,
+   #reddit-toolbutton::before,
+   #expense-toolbutton::before{
+    
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        border-radius: 1rem; 
+        z-index: 1; 
+    }
+
+    #fb-toolbutton *,
+    #club-toolbutton *,
+    #vc-toolbutton *,
+    #teacozy-toolbutton *,
+    #recipe-toolbutton *,
+    #reddit-toolbutton *,
+    #expense-toolbutton *{
+        position: relative; 
+        z-index: 2;
+    }
 
     
-    #jaytrades-project-img{
-        width: auto;
+    .tools-list{
+        width: 100%;
+        margin-bottom: 25%;    
+       
+    }
+    
+    .tools-list P{
+        background-color: rgb(1, 1, 26); 
+        padding: 0.5rem;
+        font-size: 0.6rem;
+        color: white;
+      
     }
 
-    #msg-project-box {
-        width: auto;
-        height: auto;
+    #project-link{
+        flex-basis: 35%;
     }
 
-    #msg-display-box{
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        height: auto;
+    /*Resume style*/
+    .resume-file{
+        width:90%;
+        height:500px; 
+       
+        
+    }
+    
+    
+    /*Contact page style*/
+    #contact-intro p{
+        width: 90%;
+        text-align: left;
+       
     }
 
+    .contact-section{
+        display: block;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1rem;
+        
+    }
+        
+    .contacts-item1, .contacts-item2{
+        width:100%;
+        font-weight: 500;
+        border: none ;
+        margin: auto;  
+    }
+    
+    .contacts-item1{
+        margin-right: 0%;
+        margin: auto;
+    }
 
+    form input, form textarea {
+        width: 90% ;
+        font-size:1.1rem ;   
+        
+    }
+
+    
+   
+       
 }
+
+
+
+
