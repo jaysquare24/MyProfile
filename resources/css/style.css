@@ -6,7 +6,7 @@ html{
 
 body{
     box-sizing: border-box;
-    background-image: url('../About\ Me.png');
+    background-image: url('../about-me.png');
     background-size: cover;
     width:100%;
     margin: 0;
@@ -769,7 +769,7 @@ form button{
     }
 
     #fb-toolbutton{
-        background-image: url('/resources/clone-facebook image.png');
+        background-image: url('/resources/clone-facebook-image.png');
 
     }
 
@@ -779,7 +779,7 @@ form button{
     }
 
     #vc-toolbutton{
-        background-image: url('/resources/VC\ experience.png');
+        background-image: url('/resources/VC-experience.png');
     }
 
     #teacozy-toolbutton{
@@ -791,7 +791,7 @@ form button{
     }
 
     #reddit-toolbutton{
-        background-image: url('/resources/Screenshot\ \(25\).png');
+        background-image: url('/resources/reddit-image.png');
     }
 
     #recipe-toolbutton{
@@ -833,7 +833,7 @@ form button{
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); 
+        background-color: rgba(0, 0, 0, 0.6); 
         border-radius: 1rem; 
         z-index: 1; 
     }
