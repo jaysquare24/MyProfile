@@ -118,7 +118,7 @@ a:hover{
     padding-bottom: 0.2rem;
     justify-content: space-between;
 
-    border: 1px solid white;
+    
    
    
 }
@@ -130,7 +130,7 @@ a:hover{
     display: inline-flex;
     margin-left: 3%;
     
-    border: 1px solid white;
+    
    
     
 }
@@ -142,7 +142,7 @@ a:hover{
     color:white;
     font-size: small;
 
-    border: 1px solid white;
+   
    
     
 }
@@ -673,7 +673,7 @@ form button{
     
     .copyright{
         margin-right: 0%;
-       justify-items: center;
+        text-align: center;
        
     }
 
