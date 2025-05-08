@@ -13,6 +13,7 @@ body{
     box-sizing: border-box;
     background-image: url('../about-me.png');
     background-size: cover;
+    font-family: 'Nunito Sans', sans-serif;
     width:100%;
     margin: 0;
 
@@ -55,7 +56,7 @@ body{
 .home-nav{
     box-sizing: border-box;
     margin-top: auto;
-    margin-left: 10%;
+    margin-left: 15%;
     display: block;
    
 
@@ -172,6 +173,9 @@ a:hover{
     margin: auto;
     display: block;
     border-radius: 50% ;
+    object-fit: cover;
+    object-position:center 22%;
+    
    
 }
 
@@ -567,6 +571,7 @@ form button{
    
     .menu-button {
         display: block;
+        
       
     }
 
@@ -579,7 +584,9 @@ form button{
         box-sizing: border-box;  
         position:absolute;
         background-color:  rgb(1, 1, 26) ;
-        width: 50%;     
+        top: 100%;
+        right: 0;
+        width: 50%; 
         padding-top: 2%; 
         padding-left: 2%;
   
@@ -591,10 +598,9 @@ form button{
         margin-top: 10px;
         margin-bottom: 10px;
         font-size: 1.3rem;
-        padding-right: 15%; 
         padding-bottom: 5%;
         border-bottom: 2px solid  rgba(123, 122, 122, 0.523);
-        width: 80%;
+        width: 90%;
        
        
     }
@@ -682,7 +688,8 @@ form button{
     
     .copyright{
         margin-right: 0%;
-        text-align: center;
+        justify-self: center;
+       
        
     }
 
@@ -695,6 +702,9 @@ form button{
 
     article h2{
         text-align: center;
+        font-size: 1rem;
+        
+        word-spacing: 0.5rem;
     }
 
     #arrow-links{
@@ -726,6 +736,7 @@ form button{
     }
 
     .skills-section{
+        width: 90%;
         display: block;
 
     }
@@ -739,7 +750,6 @@ form button{
     }
 
     .skills-list{
-
        flex-basis: 100%;
        justify-content: space-evenly;
        margin-bottom: 3rem;
@@ -851,7 +861,7 @@ form button{
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.6); 
+        background-color: rgba(0, 0, 0, 0.5); 
         border-radius: 1rem; 
         z-index: 1; 
     }
@@ -870,7 +880,7 @@ form button{
     
     .tools-list{
         width: 100%;
-        margin-bottom: 25%;    
+        margin-bottom: 10%;    
        
     }
     
@@ -884,6 +894,8 @@ form button{
 
     #project-link{
         flex-basis: 35%;
+        margin-bottom: 5%;
+        
     }
 
     /*Resume style*/
