@@ -27,18 +27,22 @@ body{
 .header-nav{box-sizing: border-box;
     background-color: rgb(1, 1, 26);
     color: white;
+    width: 100%;
     display: grid ;
     grid-template-rows: 100%;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns:  30% 50%;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
     border-bottom: 1px solid rgb(27, 27, 27);
     position: fixed;
-    width: 100%;
+    
     top: 0px;
     font-family: Arial;
     padding-top: 1% ;
     padding-bottom: 1%;
+
+    border: 1px solid red;
     
    
       
@@ -49,7 +53,7 @@ body{
     margin-top: auto;
     margin-left: 10%;
     display: block;
-    
+    border: 1px solid red;
 
    
     
@@ -78,8 +82,9 @@ body{
 
 .navigation{
     box-sizing: border-box;
-    justify-items: flex-end;
-    padding-right: 10%;
+    justify-items:end ;
+    margin-right: 10%;
+    border: 1px solid red;
     
    
 }
@@ -88,6 +93,7 @@ body{
 .other-nav {
     box-sizing: border-box;
     display: inline-flex;
+    justify-content: space-between;
     
    
     
@@ -554,11 +560,15 @@ form button{
 
     .navigation{
         border: 1px solid white;
+        justify-items: end;
+    }
+    .navigation div{
+        border: 1px solid red;
     }
     .menu-button {
         border: 1px solid white;
-        display: flex;
-        justify-self: flex-end;
+        display: block;
+      
     }
 
     .other-nav {
@@ -899,6 +909,7 @@ form button{
         margin: auto;
         margin-bottom: 1rem;
         
+        
     }
         
     .contacts-item1, .contacts-item2{
@@ -919,8 +930,9 @@ form button{
         
     }
 
-    button{
-        justify-self: center;
+    .contacts-item1 button{
+        width: 50%;
+        margin: auto;
     }
     
    
