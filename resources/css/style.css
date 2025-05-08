@@ -41,13 +41,12 @@ body{
     align-items: center;
     border-bottom: 1px solid rgb(27, 27, 27);
     position: fixed;
-    
     top: 0px;
     font-family: Arial;
     padding-top: 1% ;
     padding-bottom: 1%;
 
-    border: 1px solid red;
+    
     
    
       
@@ -58,7 +57,7 @@ body{
     margin-top: auto;
     margin-left: 10%;
     display: block;
-    border: 1px solid red;
+   
 
    
     
@@ -87,11 +86,10 @@ body{
 
 .navigation{
     box-sizing: border-box;
-    justify-items:end ;
-    justify-content: flex-end;
     display: flex;
+    justify-content: end;
     margin-right: 10%;
-    border: 1px solid red;
+    
     
    
 }
@@ -100,7 +98,7 @@ body{
 .other-nav {
     box-sizing: border-box;
     display: inline-flex;
-    justify-content: space-between;
+    
     
    
     
@@ -467,6 +465,7 @@ p{
 .contacts-item1{
     border:none ;
     margin-right: 2rem;
+    justify-content: center;
 }
 
 .contacts-item1 h3, .contacts-item2 h3{
@@ -565,18 +564,8 @@ form button{
 
 @media only screen and (max-width: 768px) {
 
-    .navigation{
-        border: 1px solid rgb(195, 211, 22);
-        justify-content: flex-end;
-        justify-items: end;
-    }
-    .navigation div{
-       
-        border: 1px solid red;
-    }
+   
     .menu-button {
-        flex-basis: 10%;
-        border: 1px solid white;
         display: block;
       
     }
@@ -940,10 +929,7 @@ form button{
         
     }
 
-    .contacts-item1 button{
-        width: 45%;
-        margin: auto;
-    }
+    
     
    
        
