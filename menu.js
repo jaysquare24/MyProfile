@@ -18,3 +18,11 @@ function toggleMenu() {
 menuButton.addEventListener('click', toggleMenu);
 
 
+document.querySelector('.copy-btn').addEventListener('click', () => {
+  const textToCopy = document.getElementById('email-text').textContent;
+  navigator.clipboard.writeText(textToCopy).then(() => {
+      alert('Copied to clipboard!');
+  }).catch(err => {
+      console.error('Failed to copy text: ', err);
+  });
+});
