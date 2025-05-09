@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Send form data to the server
-            const response = await fetch('http://localhost:3000/send-email', {
+            const response = await fetch('https://my-portfolio-s9ek.onrender.com/send-email', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, message }),
