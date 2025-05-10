@@ -671,21 +671,21 @@ form button{
     }
 
     .resume-nav{
-        border: 1px solid white;
-        width: 7% ;
+        border: 1px solid red;
+        width: 45px ;
         height: auto;
         display: block;
         position: absolute;
         top: 90%;
         left: 92%;
 
-        div:first-child{
-            margin-bottom: 8.5rem; ;
-        }
-
         img{
             width: 25px;
             height: 25px;
+        }
+
+        div:first-child{
+            margin-bottom: 8.5rem; ;
         }
     }
 
@@ -949,19 +949,19 @@ form button{
 
      .resume-nav{
        
-        width: 7% ;
+        width: 45px;
         height: auto;
         height: auto; 
         top: 75%;
         left: 93%;
-       
-        div:first-child{
-            margin-bottom: 5.5rem; ;
-        }
 
         img{
-            width: 15px;
-            height: 15px;
+            width: 15px !important;
+            height: 15px !important;
+        }
+
+        div:first-child{
+            margin-bottom: 5.5rem !important; ;
         }
     }
     
