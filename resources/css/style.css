@@ -671,6 +671,8 @@ form button{
     }
 
     .resume-nav{
+        border: 1px solid white;
+        width: 7% ;
         height: auto;
         display: block;
         position: absolute;
@@ -946,6 +948,9 @@ form button{
     }
 
      .resume-nav{
+       
+        width: 7% ;
+        height: auto;
         height: auto; 
         top: 75%;
         left: 93%;
