@@ -705,7 +705,7 @@ form button{
 }
 
 
-@media only screen and (max-width: 480px ){
+@media only screen and (max-width: 600px ){
 
     .footer{
         width: 100%;
@@ -947,23 +947,25 @@ form button{
         
     }
 
-     .resume-nav{
-       
-        width: 45px;
-        height: auto;
-        height: auto; 
-        top: 75%;
-        left: 93%;
+     
+    .resume-nav {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    background-color: transparent;
+    z-index: 9999;
 
-        img{
-            width: 15px !important;
-            height: 15px !important;
-        }
-
-        div:first-child{
-            margin-bottom: 5.5rem !important; ;
-        }
+    div:first-child {
+        border: 1px green solid;
+      margin-bottom: 5.5rem !important;
     }
+
+    img {
+      width: 15px !important;
+      height: 15px !important;
+    }
+  }
     
     
     /*Contact page style*/
