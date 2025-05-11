@@ -941,6 +941,7 @@ form button{
     .resume-file{
         width:90%;
         height:500px; 
+        border-right: none;
         
        
         
@@ -948,7 +949,7 @@ form button{
 
      .resume-nav{
         height: auto; 
-        top: 85%;
+        top: 75%;
         left: 93%;
        
         
