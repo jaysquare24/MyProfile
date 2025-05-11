@@ -18,6 +18,7 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     width:100%;
     margin: 0;
+    padding: 0;
 
 }
 
@@ -409,7 +410,7 @@ p{
 #project-link{
     box-sizing: border-box;
     flex-basis: 25%;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     background-color:rgb(1, 1, 26);  
     color: white;
     padding: 0.8rem;
@@ -584,16 +585,17 @@ form button{
 
 @media only screen and (max-width: 768px) {
 
-   
+   /*general style*/
     .menu-button {
         display: block;
-        align-self:center;
-        
-        
-      img{
+        align-self:center;    
+      
+    }
+
+    .menu-button img{
         vertical-align: middle;
       }
-    }
+
 
     .other-nav {
         display: none;
@@ -626,11 +628,11 @@ form button{
     }
 
     .other-nav#hidden a:last-child {
-        border-bottom: none; /* Remove border-bottom for the last link */
+        border-bottom: none; 
     }
 
     
-
+    
     .about-header,
     .project-header,
     .resume-header,
@@ -651,6 +653,8 @@ form button{
         
     }
 
+    /*about me page style*/
+
     .skills-section{
         display: block;
 
@@ -668,8 +672,15 @@ form button{
 
        flex-basis: 100%;
        margin-bottom: 3rem;
+
+    }
+     /*project page style*/
+
+     #project-link{
+        flex-basis: 40%;
     }
 
+    /*resume page style*/
     .resume-nav{
         height: auto;
         display: block;
@@ -688,10 +699,9 @@ form button{
         height: 25px;
     }
 
-    #project-link{
-        flex-basis: 40%;
-    }
-
+   
+  
+    /*contact page style*/
     .contact-section{
         width: 85%;
     }
@@ -932,8 +942,9 @@ form button{
     }
 
     #project-link{
-        flex-basis: 35%;
+        flex-basis: 30%;
         margin-bottom: 5%;
+        font-size: 0.7rem;  
         
     }
 
@@ -941,16 +952,15 @@ form button{
     .resume-file{
         width:90%;
         height:500px; 
-        border-right: none;
-        
-       
+
         
     }
 
      .resume-nav{
+        
         height: auto; 
-        top: 75%;
-        left: 93%;
+        top: 65%;
+        left: 93.3%;
        
         
     }
@@ -960,8 +970,8 @@ form button{
     }
 
     .nav-direction a img{
-        width: 15px;
-        height: 15px;
+        width: 16px;
+        height: 16px;
     }
     
     
