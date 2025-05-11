@@ -18,16 +18,3 @@ function toggleMenu() {
 menuButton.addEventListener('click', toggleMenu);
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const iframe = document.querySelector('.resume-file');
-
-    iframe.addEventListener('touchstart', () => {
-        iframe.style.pointerEvents = 'auto'; // Enable interaction
-    });
-
-    document.body.addEventListener('touchstart', (event) => {
-        if (!iframe.contains(event.target)) {
-            iframe.style.pointerEvents = 'none'; // Disable interaction when clicking outside
-        }
-    });
-});
