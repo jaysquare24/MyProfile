@@ -447,7 +447,10 @@ p{
     margin: 0 auto 3rem;
     border: none;
     
+    pointer-events: none; /* Disable interaction by default */
 }
+    
+
 
 .resume-nav{
     display: none;
