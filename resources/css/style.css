@@ -1,17 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800&amp;display=swap);
 html{
     font-size: 16px;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
     
 }
 
 *{
-    box-sizing: border-box;
-   
+    box-sizing: border-box; 
 }
 
 body{
+    
     box-sizing: border-box;
     background-image: url('../about-me.png');
     background-size: cover;
@@ -22,18 +20,11 @@ body{
 
 }
 
-.menu-button {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+/*header style*/
 
-
-
-/*header styling*/
-
-.header-nav{box-sizing: border-box;
+.header-nav{
+    
+    box-sizing: border-box;
     background-color: rgb(1, 1, 26);
     color: white;
     width: 100%;
@@ -50,25 +41,15 @@ body{
     font-family: Arial;
     padding-top: 1% ;
     padding-bottom: 1%;
-    z-index: 1;
-
-    
-    
-   
+    z-index: 2;
       
 }
 
 .home-nav{
-    box-sizing: border-box;
-    
+
     margin-left: 15%;
-    display: block;
+    display: block;   
     
-   
-
-   
-    
-
 }
 
 .home-nav img {
@@ -91,24 +72,25 @@ body{
     }
 }
 
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .navigation{
     box-sizing: border-box;
     display: flex;
     justify-content: end;
     margin-right: 10%;
-    
-    
-    
-   
+       
 }
 
 
 .other-nav {
     box-sizing: border-box;
     display: inline-flex;
-    
-    
-   
     
 }
 
@@ -118,58 +100,51 @@ body{
     text-decoration: none;
 }   
 
-a:hover{ 
-    color:rgb(123, 123, 207);
+ .other-nav a:hover{ 
+    color: rgb(156, 156, 232);
     text-decoration:underline;
 }
 
-/*Footer styling*/
-
-.footer{
-    box-sizing: border-box;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns:  45% 40%;
-    background-color:rgb(1, 1, 26); 
-    margin-top: 40px;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    justify-content: space-between;
-
-    
-   
-   
+.other-nav a.active{
+    border: 1px solid white;
+    padding: 2px;
+    color: rgb(1, 1, 26);
+    border-radius: 5px;
+    background-color: white;
 }
 
-.footer-image-container{
-    box-sizing: border-box;
-    align-items:center;
-    justify-content: space-evenly;
-    display: inline-flex;
-    margin-left: 3%;
-    
-    
-   
+
+/*general style*/
+
+.section{
+    padding-top: 4rem;  
     
 }
 
-.copyright{
-    justify-items: end;
-    margin-right: 15%;
-    
+.about-header,
+.project-header,
+.resume-header,
+.contact-header{
+    margin-left: 4rem;
+    font-size: 3.3rem;
+    color: rgb(0, 0, 23);
+    margin-bottom: 1.5rem;
+}
+
+#project-intro p,
+#resume-intro p,
+#contact-intro p{
+    margin-left: 4rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
     color:white;
-    font-size: small;
-
-   
-   
-    
 }
 
 
-/*home page styling*/
+
+/*home section style*/
 .image {
-    margin-top: 8rem;
+    margin-top: 4rem;
     width: 100%;   
     
 }
@@ -191,110 +166,128 @@ article{
     margin: auto;
     text-align: center;
     color: white;  
+    margin-bottom: 1.5rem;
     
+
 }
 
 article h2{
     margin-bottom: 30px;
-    word-spacing:1rem ;
+    word-spacing:0.7rem ;
+}
+
+article h2 span{
+    color:rgb(29, 243, 17);
 }
  
 article p{
-    font-size: 1.2rem ;
+    font-size: 1.5rem ;
     line-height:2rem ;
 }
 
+
  
 #arrow-links{
-    margin-left: 12rem;
+    width: 150px;
+    margin-top: 3rem;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    background-color: rgb(1, 1, 26);
+    border-radius: 2rem;
     color:white;
     text-decoration: none;
-     
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    
 }
 
 .gif{
-
-   
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     vertical-align: middle;
-    width: 38px;
+    width: 20px;
     filter: brightness(0) invert(1); /* Changes the color to white */
-}   
- 
+}  
 
-
-/* about me html styling*/
-
-h1, h2, h3, h4, h6{ 
-    font-family: Georgia;
+/* about-me section styling*/
+h1,h2,h3,h4,h6{ 
+    font-family: Georgia, sans-serif;
 }
 
 p{ 
     font-family: "Nunito Sans", sans-serif;
 }
 
-
-
-.about-header,
-.project-header,
-.resume-header,
-.contact-header{
-    margin-top:8rem ;
-    margin-left: 13rem;
-    font-size: 3.3rem;
-    color: rgb(0, 0, 23);
-}
-
-#about-header{
-    margin-bottom: 0.2rem;
-}
-
 .message{ 
-    box-sizing: border-box;
+   
     color: white; 
-    width: 70%; 
+    width: 90%; 
     margin: auto;
     text-align: justify;
     line-height: 2rem;
 }
 
 .message a{
-    color:  rgb(3, 3, 65) ;
+    color:   rgb(0, 0, 23) ;
 }
 
 .skills-section{
+    
     box-sizing: border-box;
     display: flex;
-    width: 70%;
-    margin: auto;
-    margin-top: 3rem;
+    width: 80%;
+    margin: 3rem auto 0;
+   
 
 }
 
+.skill-item{
+    flex-basis: 25%;
+}
 
 .skills-header{
-    width: 20%;
     font-size: 2rem;
     padding-bottom: 1rem;
     height: 50px;
     color: rgb(0, 0, 23) ;
-    border-right: 1.5px solid rgb(0, 0, 23) ;;
     padding-right: 2%;
     margin-top: 2%;
 }
 
+.slider-container {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.slider {
+    display: block;
+    margin: auto;
+    width: 90%;
+    transition: transform 0.5s ease-in-out;
+}
+
+        
+
 .skills-list{
+   
     box-sizing: border-box;
-    margin-top: 15px;
+    flex-basis: 65%;
     margin: auto;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     column-gap:15px;
-    flex-basis: 75%;
     height: 5%;
-    margin-bottom: 5rem;
-  
+    margin-top: 2.5rem;
+    
+    
 }
 
 .skills-list p{
@@ -309,154 +302,133 @@ p{
     vertical-align: middle;
 }
 
-/* Project html styling*/
-.project-section{
-    box-sizing: border-box;
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
-    border-bottom: 2px solid  rgb(1, 1, 26);;
-    
-
-}
-
-#project-intro p,
-#resume-intro p,
-#contact-intro p{
-    margin-left: 13rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    line-height: 1.5rem;
-    color:white;
-}
-
-#project-intro p{
-    width: 80%;
-}
-
-
-.project-group{
-    box-sizing: border-box;
-    width: 80%;
-    margin: auto;
-    display:flex;
-   
-   
-    
-}
-
-.project-image-container{
-    box-sizing: border-box;
-    flex-basis: 50%;
-    margin: auto;
-    
-
-}
-
-.project-image{
-    
-    width: 100%;
-    height: 300px;
-    border-radius: 1rem;
-    
-}
-
-.description{
-    box-sizing: border-box;
-    flex-basis: 50%;
-    margin-left: 5%;
-}
-
-.description h2, .description h3{
-    color:  rgb(0, 0, 23);
-    
-}
-
-
-
-#description-paragraphs p{
-    font-size: 1.2rem ;
-    line-height:2rem ;
-    text-align: justify;
-    color: white;  
-  
-}
-
-.tools-list{
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 5%;
-}
-
-.tools-list P{
-    background-color: rgb(1, 1, 26);
-    color: white;
-    padding: 0.7rem;
-    font-weight: bold;
-    border-radius: 5%;
-
-}
-
-.project-links-container{
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    margin: auto;
-    margin-top: 1.5rem;
-    justify-content: space-evenly;
-    
-}
-
-#project-link{
-    box-sizing: border-box;
-    flex-basis: 25%;
-    font-size: 0.9rem;
-    background-color:rgb(1, 1, 26);  
-    color: white;
-    padding: 0.8rem;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 10px;
-    transition: scale 0.3s ease;
-
-    &:hover{
-        scale: 1.05;
-   }
-   
-   
-}
-
-
-
-#recipe-app{
-    padding-bottom: 0;
-    border-bottom: none;
-
-}
-
-
-/*Resume page styling*/
-#resume-intro a{
-    color: rgb(3, 3, 65) ;
-}
-
-.resume-file{
+.view-resume{
+    width: 200px;
+    margin: 2rem auto 0; 
     display: block;
-    width:600px;
-    height:800px; 
-    margin: 0 auto 3rem;
-    border: none;
+    background-color: rgb(1, 1, 26);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.view-resume::before,
+#arrow-links::before,
+.project-link::before{
+    content: "";
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: linear-gradient(to right, white 0%, rgb(1,1,26) 100%);
+    z-index: -1;
+    width: 0;
+    transition: width 0.4s cubic-bezier(.4,0,.2,1);
+}
+
+.view-resume:hover, 
+#arrow-links:hover,
+.project-link:hover {
+    color: rgb(1, 1, 26);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-resume:hover::before,
+#arrow-links:hover::before,
+.project-link:hover::before {
+    width: 100%;
+}
+
+/*project section*/
+.project-tabs{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgb(175, 175, 183);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    
     
     
 }
+.project-tabs button{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: rgb(1, 1, 26) ;
+    padding: 0.5rem;
+    border-bottom: none;
+    cursor: pointer;
+    transition: scale 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 
-.resume-nav{
-    display: none;
+    
+    
+}
+.project-tabs button:hover{
+       
+    scale: 1.03;
+    color: rgb(156, 156, 232);
+    
+}
+.project-tabs button.active {
+    color: rgb(1, 1, 26);
+    background-color: white ;
+    
+    
+}
+.project-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
 }
 
+.project-item{
+    flex-basis: 30%;
+    
+    transition: scale 0.3s ease;
+}
 
+.project-item:hover{
+    scale: 1.05;
+    transform: rotate(2deg) scale(1.03);
+  
+   
+}
 
-/*Contact page style*/
+.project-pic{
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+   
+   
+}
+
+.project-item{
+    border-radius: 1rem;
+    background-color:  rgba(0.5, 0.5, 0.5, 0.5) ;
+}
+
+.project-item h3{
+    color:white;
+    text-align: center;
+    font-size: 1rem;
+    
+    margin-top: 0;
+    
+}
+ 
+
+/*Contact section style*/
 #contact-intro p{
     width: 80%;
     text-align: justify;
@@ -466,14 +438,13 @@ p{
 .contact-section{
     box-sizing: border-box;
     display: flex;
-    width: 70%;
+    width: 90%;
     margin: auto;
      
 }
 
 .contacts-item1, .contacts-item2{
-    box-sizing: border-box;
-    padding: 5%;
+    padding: 5px 20px;
     width:50%;
     font-weight: 600;
     border-left: 3px rgb(1, 1, 26) solid ;   
@@ -492,46 +463,33 @@ p{
 .contacts-info{
     box-sizing: border-box;
     width: 100%;
-    color: white;
-    background-color: rgba(0.5, 0.5, 0.5, 0.5);
-    border: 2px rgb(34, 34, 34) solid;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    color: white; 
+    
    
 }
 
 .contacts-info p{ 
-    margin-bottom: 2rem;
-}
-
-
-.contact-title{
-    color:  white; 
-    font-weight: 800;
-    
-    
-
-}
-.contact{
-    color: white;
-}
-
-.contact-image-container{
-    box-sizing: border-box;
-}
-
-.contact-image-container p{
-    margin-bottom:1rem ;
-}
-
-.contact-image-item{
-    display: flex;
+    max-width: 400px;
+    min-width: 100px;
     margin-bottom: 1.5rem;
-    margin-left: 1rem;
+    padding: 1.5rem 0.5rem;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
 }
 
-.contact-image-item a{
-    margin-right: 2rem;
+.contacts-info p img{
+
+    width: 58px;
+    height: 58px;
+    vertical-align: middle;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    background-color: rgba(130, 128, 128, 0.484);
+    padding:1rem;
+    
 }
 
 form input, form textarea {
@@ -558,24 +516,173 @@ form button{
     display: block;
     justify-self: center;
     border:2px solid rgb(53, 53, 53);
+    cursor: pointer;
 }
 
-.contact-image img{width: 40px;
-                    height: 30px;
-                
-}
 
-.footer-contact-copyright{
+/*Footer section style*/
+
+.footer{
     box-sizing: border-box;
     width: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns:  45% 40%;
     background-color:rgb(1, 1, 26); 
     margin-top: 40px;
-    color: white;
-    font-size: small;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
+    justify-content: space-between;
+   
+}
+
+.footer-image-container{
+    box-sizing: border-box;
+    align-items:center;
+    justify-content: space-evenly;
+    display: inline-flex;
+    margin-left: 3%;
+    
+    
+   
+    
+}
+.footer-image-container img{
+    vertical-align: middle;
+    
+}
+
+.copyright{
+    justify-items: center;
+    margin-right: 15%;
+    color:white;
+    font-size: small;
+}
+
+.footer a{
+    color: white;
+    
+}
+
+
+
+
+/* Project page styling*/
+.project-section{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+   
+}
+
+.project-section h1{
+    margin-left: 4rem;
+}
+
+
+
+#project-intro p{
+    width: 90%;
+}
+
+
+.project-group{
+   
+    width: 80%;
+    margin: auto;
+    display:flex;
+       
+}
+
+.project-image-container{
+    
+    flex-basis: 50%;
+    margin: auto;
+    
+
+}
+
+.project-image{
+    
+    width: 100%;
+    height: 300px;
+    border-radius: 1rem;
+    
+}
+
+.description{
+   
+    flex-basis: 50%;
+    margin-left: 5%;
+}
+
+ .description h3{
+    color:  rgb(0, 0, 23);
+    
+}
+
+
+
+.description-paragraphs p{
+    font-size: 1.2rem ;
+    line-height:2rem ;
+    text-align: justify;
+    color: white;  
+  
+}
+
+.tools-list{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 5%;
+}
+
+.tools-list P{
+    background-color: rgb(1, 1, 26);
+    color: white;
+    padding: 0.7rem;
+    font-weight: bold;
+    border-radius: 5%;
+
+}
+
+.project-links-container{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    margin-top: 1.5rem;
+    justify-content: space-evenly;
+    
+}
+
+.project-link{
+    flex-basis: 25%;
+    font-size: 0.9rem;
+    background-color:rgb(1, 1, 26);  
+    color: white;
+    padding: 0.8rem;
+    font-weight: bold;
     text-align: center;
-    font-family: Arial;   
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease, background-color 0.3s ease;
+   
+   
+}
+
+.project-link:hover{
+   
+  scale: 1.05;
+   
+}
+
+#recipe-app{
+    padding-bottom: 0;
+    border-bottom: none;
+
 }
 
        
@@ -586,7 +693,7 @@ form button{
 
 @media only screen and (max-width: 768px) {
 
-   /*general style*/
+   /*header style*/
     .menu-button {
         display: block;
         align-self:center;    
@@ -609,21 +716,24 @@ form button{
         background-color:  rgb(1, 1, 26) ;
         top: 100%;
         right: 0;
-        width: 50%; 
+        width: 100%; 
+        height: 100vh;
         padding-top: 2%; 
         padding-left: 2%;
+        align-content: center;
+        
   
         
     }
 
     .other-nav#hidden a{ 
         display: block; 
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 10px auto;
         font-size: 1.3rem;
         padding-bottom: 5%;
         border-bottom: 2px solid  rgba(123, 122, 122, 0.523);
-        width: 90%;
+        width: 50%;
+        text-align: center;
        
        
     }
@@ -631,32 +741,185 @@ form button{
     .other-nav#hidden a:last-child {
         border-bottom: none; 
     }
+    
+    /*general style*/
+    .section{
+        padding-top: 2rem;
+    }
 
-    
-    
     .about-header,
     .project-header,
     .resume-header,
     .contact-header{
-        margin-left: 5.5rem;
+        margin-left: 2.5rem;
         
     }
 
     #project-intro p,
     #resume-intro p,
     #contact-intro p{
-        margin-left: 5.5rem;
+        margin-left: 2.5rem;
     }
 
-    #arrow-links{
-        margin-left: 5.5rem;
-        
-        
-    }
+   
 
-    /*about me page style*/
+    /*about-me section style*/
 
     .skills-section{
+        width: 85%;
+    }
+    
+    
+    /*contact section style*/
+    .contact-section{
+        
+        display: block;
+        width: 90%;
+    }
+
+    .contacts-item1, .contacts-item2{
+        width:90%;
+        padding: 0;
+        margin: auto;
+        border: none;
+        text-align: center;
+    }
+
+    .contacts-item1{
+        margin-right: 0%;
+        margin: auto;
+    }
+
+    .contacts-info p{ 
+        width: 350px;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem 0.8rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        
+    }
+
+    .contacts-info p img{
+        width: 48px;
+        height: 48px;
+        margin-right: 0.7rem;
+        padding:0.7rem;
+        
+    }
+  
+  /*Footer section*/
+   .footer{
+        width: 100%;
+        display: block; 
+        justify-content: center;
+       
+    }
+
+    .footer-image-container{
+        width: 100%;
+        justify-content:space-evenly;
+        display: inline-flex;
+        margin-left: 0;
+        margin-top: 0.6rem;
+         
+        
+    }
+
+    
+    .copyright{
+        margin-right: 0%;
+        text-align: center;
+        justify-self: center;
+       
+       
+    }
+
+    /*project page style*/
+    .project-section{ 
+        margin-bottom: 2rem;
+        
+    }
+
+    .project-section h1{
+    margin-left: 3.2rem;
+    }
+
+    .description-paragraphs p{
+        text-align:left;
+    }
+
+    .project-link{
+        
+        flex-basis: 40%;
+        
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 480px ){
+   /*general style*/
+   
+    .section{    
+    padding-top: 2rem;
+   
+   } 
+
+   p{
+    font-size: 0.9rem;
+   }
+
+   .about-header,
+   .project-header,
+   .resume-header,
+   .contact-header{
+        margin-left: 1rem;
+        
+    }
+
+    #project-intro p,
+    #resume-intro p,
+    #contact-intro p{
+    margin-left: 1rem;
+    
+    }
+
+   /* home section style*/
+    article{
+        
+        width: 90% ;
+        text-align:center; 
+        
+    }
+
+    article h2{
+        text-align: center;
+        font-size: 1rem;
+        word-spacing: 0.5rem;
+    }
+
+    article p{
+        font-size: 1rem ;
+        line-height: 1.5rem;
+    }
+
+
+    /*About-me section style*/  
+    
+   
+    .message{ 
+        border: none;
+        width: 95%; 
+        padding: 0 0.6rem;
+        text-align:left;
+        
+        
+    }
+
+    .skills-section{
+        width: 90%;
         display: block;
 
     }
@@ -669,53 +932,91 @@ form button{
         
     }
 
+    .slider-container{
+        display: none;
+    }
+
     .skills-list{
-
        flex-basis: 100%;
-       margin-bottom: 3rem;
-
-    }
-     /*project page style*/
-
-     #project-link{
-        flex-basis: 40%;
+       justify-content:space-evenly;
+       
     }
 
-    /*resume page style*/
-    .resume-nav{
-        height: auto;
-        display: block;
-        position: absolute;
-        top: 90%;
-        left: 92%;
 
+ /*project section style*/
+
+    .project-item h3{
+        font-size: 0.5rem;
+        font-weight: 100;
+        
         
     }
-    #down-nav{
-        margin-bottom: 8.5rem; ;
-    }
 
-    .nav-direction img{
-        width: 25px;
-        height: 25px;
-    }
 
-   
-  
-    /*contact page style*/
-    .contact-section{
-        width: 85%;
+   .project-pic{
+        width: 100%;
+        height:80px;
     }
-
-    .contacts-item1, .contacts-item2{
-        width:50%;
-    }
-
     
-}
 
+  /*Contact section style*/
+    #contact-intro p{
+        width: 90%;
+        text-align: left;
+       
+    }
 
-@media only screen and (max-width: 480px ){
+    .contact-section{
+        display: block;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1rem;
+        
+        
+    }
+        
+    .contacts-item1, .contacts-item2{
+        width:100%;
+        font-weight: 500;
+        border: none ;
+        margin: auto;  
+    }
+    
+    .contacts-item1{
+        margin-right: 0%;
+        margin: auto;
+    }
+
+    form input, form textarea {
+        width: 90% ;
+        font-size:1.1rem ;   
+        
+    }
+
+    .contacts-info{
+        padding-right: 0;
+    }
+
+    .contacts-info p{ 
+       
+        width: 275px;
+        margin: auto;
+        margin-bottom: 1rem;
+        padding: 1rem 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        
+    }
+
+    .contacts-info p img{
+        width: 38px;
+        height: 38px;
+        margin-right: 0.5rem;
+        padding:0.5rem;
+        
+    }
+
+    /*Footer section*/
 
     .footer{
         width: 100%;
@@ -743,86 +1044,28 @@ form button{
        
     }
 
-   /* home style*/
-    article{
-        width: 90% ;
-        text-align:center; 
-        
-    }
 
-    article h2{
-        text-align: center;
-        font-size: 1rem;
-        
-        word-spacing: 0.5rem;
-    }
-
-    #arrow-links{
-        width: 50%;
-        margin-left: 5%;
-        
-    
-    }
-
-
-    /*About me style*/
-
-    .about-header,
-    .project-header,
-    .resume-header,
-    .contact-header{
-        margin-left: 1rem;
-        
-    }
-       
-    .message{ 
-         
-        border: none;
-        width: 95%; 
-        padding: 1rem;
-        text-align:left;
-        
-        
-    }
-
-    .skills-section{
-        width: 90%;
-        display: block;
-
-    }
-
-    .skills-header{
-        width: 100%;
-        text-align: center;
-        border: none;
-        height: 16px;
-        
-    }
-
-    .skills-list{
-       flex-basis: 100%;
-       justify-content: space-evenly;
-       margin-bottom: 3rem;
-    }
-
-
-    /*Project style*/
+    /*Project page style*/
 
     .header-nav{
         z-index: 3;
     }
+    .project-section{ 
+        margin-bottom: 1rem;
+        
+    }
+    
+    .project-section h1{
+    margin-left: 1rem;
+    }
+
+   
     .project-group{
         width: 90%;
         display:block;  
            
     }
 
-    #project-intro p,
-    #resume-intro p,
-    #contact-intro p{
-    margin-left: 1rem;
-    
-    }
 
     .project-image-container{
         display: none;
@@ -839,8 +1082,8 @@ form button{
         
     }
      
-    #description-paragraphs p{
-        font-size: 1.1rem ;
+    .description-paragraphs p{
+        font-size: 0.9rem ;
         text-align: left;
           
       
@@ -942,83 +1185,39 @@ form button{
       
     }
 
-    #project-link{
+    .project-link{
         flex-basis: 30%;
         margin-bottom: 5%;
         font-size: 0.7rem;  
         
     }
 
-    /*Resume style*/
-    .resume-file{
-        width:90%;
-        height:500px; 
-
-        
-    }
-
-     .resume-nav{
-        
-        height: auto; 
-        top: 65%;
-        left: 93.3%;
-       
-        
-    }
-
-    #down-nav{
-        margin-bottom: 5.5rem; ;
-    }
-
-    .nav-direction a img{
-        width: 16px;
-        height: 16px;
-    }
-    
-    
-    /*Contact page style*/
-    #contact-intro p{
-        width: 90%;
-        text-align: left;
-       
-    }
-
-    .contact-section{
-        display: block;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 1rem;
-        
-        
-    }
-        
-    .contacts-item1, .contacts-item2{
-        width:100%;
-        font-weight: 500;
-        border: none ;
-        margin: auto;  
-    }
-    
-    .contacts-item1{
-        margin-right: 0%;
-        margin: auto;
-    }
-
-    .contacts-info{
-        padding-right: 0;
-    }
-
-    form input, form textarea {
-        width: 90% ;
-        font-size:1.1rem ;   
-        
-    }
-
-    
-    
    
        
 }
+
+@media only screen and (max-width: 330px) {
+   .contacts-info p{ 
+       
+        width: 230px;
+        margin: auto;
+        margin-bottom: 1rem;
+        padding: 0.8rem 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 400;
+        
+    }
+
+    .contacts-info p img{
+        width: 30px;
+        height: 30px;
+        margin-right: 0.5rem;
+        padding:0.5rem;
+        
+    }
+
+}
+
 
 
 

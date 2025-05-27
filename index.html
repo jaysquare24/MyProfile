@@ -3,8 +3,8 @@
 <html lang="en">
 
     <head>
-        <title>Home | Jamiu Olajide | Web Developer</title>
         <meta charset="UTF-8">
+        <title>Portfolio | Jamiu Olajide | Web Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <link rel="stylesheet" href="resources/css/style.css" type="text/css"/>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -23,14 +23,14 @@
                 <div class="navigation">
                    
                     <nav class="other-nav" id="hidden" aria-label="Secondary navigation">
-                        <a id="abme" href="aboutme.html" aria-label="About me page">About me</a>
-                        <a href="projects.html" aria-label="Projects page">Projects</a>
-                        <a href="resume.html" role="menuitem">Resumé</a>
-                        <a href="contact.html" aria-label="Contacts page">Contacts</a>
+                        <a href="#home" class="active">Home</a>
+                        <a href="#aboutme" aria-label="About me page">About me</a>
+                        <a href="#projects" aria-label="Projects page">Projects</a>
+                        <a href="#contacts" aria-label="Contacts page">Contacts</a>
                     </nav>
 
                     <div>
-                        <button class="menu-button" id="menu-button" aria-label="Toggle navigation menu"> <img id="menu-icon" src="resources/icons8-menu-24.png" alt="Menu icon"></button>
+                        <button type="button" class="menu-button" id="menu-button" aria-label="Toggle navigation menu"> <img id="menu-icon" src="resources/icons8-menu-24.png" alt="Menu icon"></button>
                     </div>
               </div>
 
@@ -39,64 +39,228 @@
         </header>
 
         <main role="main">
-           
-            <div class="image" role="presentation">
-              <img src="resources/portfolio-img.jpg" alt="Portrait of J.O Olajide"/>
-            </div>
 
-            <article>
-              <h2> HELLO, I AM J.O. OLAJIDE.</h2>
-              <p>I'm a result-driven Web Developer focused on building and managing websites and web applications that contribute to the success of every product. As a passionate and experienced front-end developer, I specialize in creating dynamic, user-friendly applications that blend functionality with visually stunning designs.</p> 
-            </article>
 
-            <a id="arrow-links" href="aboutme.html" aria-label="See more about me">
-                See More About Me
-                <img class="gif" src="./resources/icons8-advance-unscreen.gif" alt="Arrow pointing to about me page">
-            </a>
+           <section  id="home" class="section">
+                <div class="image" role="presentation">
+                  <img src="resources/portfolio-img.jpg" alt="Portrait of J.O Olajide"/>
+                </div>
+
+                <article>
+                    <h2> <span>HELLO,</span> I AM J.O. OLAJIDE.</h2>
+                    <p>A result-driven Web Developer focused on building and managing websites and web applications that contribute to the success of every product.</p> 
+                </article>
+                 
+                
+                <a id="arrow-links" href="#aboutme" aria-label="See more about me">
+                    About Me
+                    <img class="gif" src="./resources/icons8-double-down-unscreen.gif" alt="Arrow pointing to about me page">
+                </a>
+                
+            </section>
+
+            <section  id="aboutme" class="section">
+                <div  class="about-section" role="region" aria-labelledby="about-header">
+                    <h1 class="about-header" id="about-header">About Me.</h1>
+                    <div class="message" role="presentation">
+                        <p>I am an innovative Front-end Web Developer and JavaScript Engineer, dedicated to crafting exceptional digital experiences. I specialize in designing, developing and managing websites and web applications that combine functionality with aesthetic appeal. My expertise in front-end technology, ensuring that every solution is as technically sound as it is visually compelling. My mission is to create solutions that not only meet but exceed expectations, helping businesses achieve their digital objectives in today’s competitive landscape.</p>
+                        <p>With a proven track record in developing top-notch solutions, I have successfully completed several projects. Check out some of my works in the <a href="projects.html">projects</a> section. Each project reflects my commitment to quality, functionality, and innovation.</p>
+                        <p>Beyond coding, I enjoy exploring scientific advancements and innovations, studying code, and engaging with the developer community on platforms like <a href="https://discuss.codecademy.com/" target="_blank" rel="noopener">Codecademy</a>. I’m an avid reader of personal growth books, always striving to enhance my skills and perspective. Playing chess is another passion of mine, it sharpens my problem-solving abilities and strategic thinking.</p>
+                        <p>Whether you have a specific project in mind or need a partner to bring your vision to life, I’m here to contribute, learn and grow. Let’s work together to create digital solutions that stand out, speak to your audience, and align perfectly with your brand’s objectives.</p>
+                    </div>
+                </div>
+               <div class="skills-section" role="region" aria-labelledby="skills-header">
+                    <div class="skill-item">
+                     <h3 class="skills-header" id="skills-header">My Skills</h3>
+                        <div class="slider-container">
+                          <img class="slider" src="./resources/icons8-html5.svg" alt="Skills Icons"/>
+                        </div>
+                    </div>
+                    <div class="skills-list">
+                        <p><img src="./resources/icons8-html-logo-48.png" alt="HTML logo"/> HTML</p>
+                        <p><img src="./resources/icons8-css-logo-48.png" alt="CSS logo"/> CSS</p>
+                        <p><img src="./resources/icons8-javascript-48.png" alt="JavaScript logo"/> JavaScript</p>
+                        <p><img src="./resources/icons8-java-48.png" alt="Java logo"/> Java</p>
+                        <p><img src="./resources/icons8-react-40.png" alt="React logo"/> React</p>
+                        <p><img src="./resources/icons8-redux-25.png" alt="Redux logo"/> Redux</p>
+                        <p><img src="./resources/icons8-responsive-48.png" alt="Responsive Design logo"/> Responsive Design</p>
+                        <p><img src="./resources/icons8-git-48.png" alt="Git logo"/> Version Control</p>
+                        <p>API integration</p>
+                        <P>Markdown Language</P>
+                        <p>Communication Skills</p>
+                        <p>Problem Solving</p>
+                        <p>Teamwork</p>
+                        <p>Leadership skills</p>
+                    </div>
+                    
+
+                
+                </div>
+
+                
+                <a class="view-resume" href="./resources/Maastricht Blue Minimalist Professional Resume Web Developer.pdf"  target="_blank" rel="noopener">View Resumé</a>
+                
+            </section>
+
+            <section  id="projects" class="section">
+
+                <div id="project-intro">
+                    <h1 class="project-header">Projects.</h1>
+                    <p>Here you will find some of the personal projects that I created, with each project containing its own GitHub link and live link.</p>
+                </div>
+
+                <div class="project-tabs" role="navigation" aria-label="Project categories">
+                    <button type="button" class="all-button project-button active">All</button>
+                    <button type="button" class="app-button project-button ">Web Apps</button>
+                    <button type="button" class="site-button project-button ">Websites</button> 
+                </div>
+
+                <div class="project-container" role="region" aria-labelledby="projects section">
+                    
+                     
+                    <div class="project-item app all">
+                        <a href="projects.html#expense-tracker" id="expense-tracker-link">
+                            <picture>
+                               <source media="(max-width: 800px)" srcset="resources/expense2.png">
+                               <img class="project-pic" src="resources/expense1.png" alt="Screenshot of Expense tracker web app"/>
+                            </picture>
+                        </a>
+                        <h3>Expense Tracker App</h3>
+                    </div>
+
+                    <div class="project-item app all">
+                        <a href="projects.html#reddit-client-app" id="reddit-client-link">
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="resources/redditMobile.png" alt="Screenshot of reddit-client-app">
+                               <img class="project-pic" src="resources/reddit-image.png" alt="Screenshot of reddit-reddit-app"/>
+                            </picture>
+                        </a>
+                        <h3>Reddit Client Web App</h3>
+                    </div>
+
+                    <div class="project-item site all">
+                        <a href="projects.html#club-website" id="club-website-link">
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="resources/athleticMobile.png" alt="Screenshot of South Village Run Club website">
+                                <img class="project-pic" src="resources/South-run-club.png" alt="Screenshot of South Village Run Club website">
+                            </picture>  
+                        </a>
+                        <h3>South Village Run Club Website</h3>
+                    </div>
+
+                    <div class="project-item site all">
+                        <a href="projects.html#vc-experience-website" id="vc-experience-link">
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="resources/VCmobile.png" alt="Screenshot of VC Experience Enterprise website">
+                                <img class="project-pic" src="resources/VC-experience.png" alt="Screenshot of VC Experience Enterprise website">  
+                            </picture>
+                        </a>
+                        <h3>The VC Experience Enterprise Website</h3>
+                    </div>
+
+                    <div class="project-item app all">
+                        <a href="projects.html#recipe-app" id="recipe-app-link">
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="resources/favRecipe1.png" alt="Screenshot of recipe web app">
+                                <img class="project-pic" src="resources/favRecipe2.png" alt="Screenshot of recipe web app">
+                            </picture>
+                        </a>
+                        <h3>Recipe Web App</h3>
+                    </div>
+
+                    <div class="project-item site all">
+                        <a href="projects.html#facebook" id="facebook-link"> 
+                            <picture>
+                                <source media="(max-width: 800px)" srcset="resources/facebookMobile.png" alt="Screenshot of Facebook login interface clone">
+                                <img class="project-pic" src="resources/clone-facebook-image.png" alt="Screenshot of Facebook login interface clone">
+                            </picture>
+                        </a>
+                        <h3>Cloned Facebook Log-In Interface</h3>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="section" id="contacts">
+                <div id="contact-intro">
+                    <h1 class="contact-header">Contact.</h1>
+                    <p>Contact me by submitting the form below, or through email / phone number.</p>
+                </div>  
+
+                <div class="contact-section" role="region" aria-labelledby="contact-form-heading">
+
+                    <form class="contacts-item1" id="contactForm" aria-labelledby="contact-form-heading">
+                        <h3 id="contact-form-heading">Send a message</h3>     
+                        
+                        <input type="text" name="name" id="name" placeholder="Name" required />
+                        <br><br>
+                        <input type="email" name="email" id="email" placeholder="Email" required />
+                        <br><br>
+                        <textarea cols="40" rows="5" placeholder="Message" name="message" id="message" required></textarea>
+                        <button type="submit" aria-label="Send your message">Send Message</button>
+                    </form>
+                
+            
+                   <div class="contacts-item2">    
+                        <h3>Contacts Info</h3>
+
+                        <div class="contacts-info" role="presentation">   
+                            <p><img alt="mail icon" src="resources/icons8-mail-48.png"/>devjamiuolajide@gmail.com</p>  
+                            <p><img alt="phone icon" src="resources/icons8-phone-call-48.png"/> +234-706-3457-926</p>
+                        </div>  
+
+                    </div>
+                
+                </div>
+
+            </section>
+
              
 
         </main>
         
-        <footer role="footer">
+        <footer class="footer" role="contentinfo">
 
-            <div class="footer">
+            
 
-                <div class="footer-image-container">
+            <div class="footer-image-container">
 
-                    <div  class="item">
-                        <a href="https://wa.me/2347063457926?text=Hello%20I%20want%20to%20contact%20you!" target="_blank" aria-label="Contact me on WhatsApp"><img src="resources/icons8-whatsapp-50.png" width="30px" height="25px" alt="WhatsApp icon"/></a>
-                    </div>
-
-                    <div  class="item">
-                        <a href="http://be.net/jamiuolajide" target="_blank" aria-label="Visit my Behance profile"><img src="resources/icons8-behance-50.png" width="30px" height="25px" alt="Behance icon"/></a>
-                    </div>
-
-                    <div  class="item">
-                        <a href="https://www.linkedin.com/in/jamiu-olajide-795444185" target="_blank" aria-label="Visit my LinkedIn profile"><img src="resources/icons8-linkedin-50.png" width="30px" height="25px" alt="LinkedIn icon"/></a>
-                    </div>
-
-                    <div  class="item">
-                        <a href="https://github.com/jaysquare24" target="_blank" aria-label="Visit my GitHub profile"><img src="resources/icons8-github-50.png" width="30px" height="25px" alt="GitHub icon"/></a>
-                    </div>
-
-                    <div  class="item">
-                        <a href="https://dribbble.com/Jay-Codes" target="_blank" aria-label="Visit Dribbble profile"><img src="resources/icons8-dribbble-50.png" width="30px" height="25px" alt="Dribbble icon"/></a>
-                    </div>
-
-                    <div  class="item">
-                        <a href="https://x.com/leojaysquare?s=21&t=WLpQzOcBaptK1TCRdxXbBg" target="_blank" aria-label="Visit my Twitter profile"><img src="resources/icons8-twitter-circled-50.png" width="30px" height="25px" alt="Twitter icon"/></a>
-                    </div>
-
+                <div  class="item">
+                    <a href="https://wa.me/2347063457926?text=Hello%20I%20want%20to%20contact%20you!" target="_blank" rel="noopener" aria-label="Contact me on WhatsApp"><img src="resources/icons8-whatsapp-50.png" width="30px" height="25px" alt="WhatsApp icon"/></a>
                 </div>
 
-                <div class="copyright">
-                    <p>Copyright &copy; - All Rights Reserved by Olajide</p>
+                <div  class="item">
+                    <a href="http://be.net/jamiuolajide" target="_blank" rel="noopener" aria-label="Visit my Behance profile"><img src="resources/icons8-behance-50.png" width="30px" height="25px" alt="Behance icon"/></a>
+                </div>
+
+                <div  class="item">
+                    <a href="https://www.linkedin.com/in/jamiu-olajide-795444185" target="_blank" rel="noopener" aria-label="Visit my LinkedIn profile"><img src="resources/icons8-linkedin-50.png" width="30px" height="25px" alt="LinkedIn icon"/></a>
+                </div>
+
+                <div  class="item">
+                    <a href="https://github.com/jaysquare24" target="_blank" rel="noopener" aria-label="Visit my GitHub profile"><img src="resources/icons8-github-50.png" width="30px" height="25px" alt="GitHub icon"/></a>
+                </div>
+
+                <div  class="item">
+                    <a href="https://dribbble.com/Jay-Codes" target="_blank" rel="noopener" aria-label="Visit Dribbble profile"><img src="resources/icons8-dribbble-50.png" width="30px" height="25px" alt="Dribbble icon"/></a>
+                </div>
+
+                <div  class="item">
+                    <a href="https://x.com/leojaysquare?s=21&t=WLpQzOcBaptK1TCRdxXbBg" target="_blank" rel="noopener" aria-label="Visit my Twitter profile"><img src="resources/icons8-twitter-circled-50.png" width="30px" height="25px" alt="Twitter icon"/></a>
                 </div>
 
             </div>
 
+            <div class="copyright">
+                <p>&copy; - All Rights Reserved. Jamiu Olajide.</p>
+                <p>Icons by <a href="https://icons8.com/" target="_blank" rel="noopener" aria-label="Icon8 site">Icons8</a></p>
+            </div>
+
+            
+
         </footer>
-        <script src="menu.js" defer></script>
+        <script src="formSubmission.js" defer></script>
+        <script src="script.js" defer></script>
 
     </body>
 
