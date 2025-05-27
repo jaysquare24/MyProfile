@@ -713,12 +713,11 @@ form button{
     .other-nav#hidden {
         box-sizing: border-box;  
         position:absolute;
-        display: block;
         background-color:  rgb(1, 1, 26) ;
         top: 100%;
         right: 0;
         width: 100%; 
-        height: 100vh;
+        height: 100vh ;
         padding-top: 2%; 
         align-content: center;
         
@@ -727,7 +726,7 @@ form button{
     }
 
     .other-nav#hidden a{ 
-        align-self: center;
+        
         display: block; 
         margin: 10px auto;
         font-size: 1.3rem;
