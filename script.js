@@ -9,16 +9,18 @@ const nav = document.getElementById('hidden');
 
 /* Event Handler */
 function toggleMenu() {
-  
+  // Toggle navigation visibility
   nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+  
+  // Toggle menu icon
+  menuIcon.src.endsWith("icons8-menu-24.png")? 
+  menuIcon.src = "resources/icons8-cancel-24.png":
+  menuIcon.src = "resources/icons8-menu-24.png";
 
-  if (menuIcon.src.endsWith("icons8-menu-24.png")) {
-      menuIcon.src = "resources/icons8-cancel-24.png";
-      
-  } else {
-      menuIcon.src = "resources/icons8-menu-24.png";
+  // Toggle scroll lock on body
+  document.body.classList.toggle('menu-open', nav.style.display === 'block');
      
-  }
+
   
 
 }
@@ -76,9 +78,9 @@ const imgSrc =[
   "./resources/icons8-javascript.svg",
   "./resources/icons8-java.svg",
   "./resources/icons8-react.svg",
-  "./resources/icons8-redux-100.png",
+  "./resources/redux_original_logo_icon_146365.webp",
   "./resources/icons8-git.svg",
-  "./resources/icons8-responsive-design-100.png",
+  "./resources/responsive-icon-4.png",
   "./resources/icons8-html5.svg"
   
                                

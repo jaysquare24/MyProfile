@@ -140,6 +140,11 @@ body{
     color:white;
 }
 
+body.menu-open {
+  overflow: hidden;
+  height: 100vh; /*prevents some mobile scroll edge cases */
+}
+
 
 
 /*home section style*/
@@ -474,6 +479,8 @@ p{
 }
 
 .contacts-item1 h3, .contacts-item2 h3{
+    font-weight:bolder;
+    font-size: 22px;
     color:   rgb(0, 0, 23);
 }
     
@@ -491,10 +498,14 @@ p{
     margin-bottom: 1.5rem;
     padding: 1.5rem 0.5rem;
     background-color: rgba(0.5, 0.5, 0.5, 0.5);
-    border-radius: 2rem;
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
+}
+
+.contacts-info a {
+  color: white;
+  
 }
 
 .contacts-info p img{
@@ -809,7 +820,7 @@ form button{
 
     .contacts-item1{
         margin-right: 0%;
-        margin: auto;
+        margin: 0 auto 7%;
     }
 
     .contacts-info p{ 
@@ -890,7 +901,7 @@ form button{
    } 
 
    p{
-    font-size: 0.9rem;
+    font-size: 1rem;
    }
 
    .about-header,
@@ -923,7 +934,7 @@ form button{
     }
 
     article p{
-        font-size: 1rem ;
+        font-size: 1.2rem ;
         line-height: 1.5rem;
     }
 
@@ -1010,7 +1021,7 @@ form button{
     
     .contacts-item1{
         margin-right: 0%;
-        margin: auto;
+        margin: 0 auto 7%;
     }
 
     form input, form textarea {
@@ -1109,7 +1120,7 @@ form button{
     }
      
     .description-paragraphs p{
-        font-size: 0.9rem ;
+        font-size: 1rem ;
         text-align: left;
           
       
