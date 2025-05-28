@@ -364,7 +364,7 @@ p{
     font-size: 1rem;
     background-color: rgb(1, 1, 26) ;
     padding: 0.5rem;
-    border-bottom: none;
+    border: none;
     cursor: pointer;
     transition: scale 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 
@@ -389,6 +389,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
     row-gap: 2rem;
 }
 
@@ -415,15 +416,31 @@ p{
 
 .project-item{
     border-radius: 1rem;
-    background-color:  rgba(0.5, 0.5, 0.5, 0.5) ;
+    background-color:   rgb(1, 1, 26) ;
+    
+}
+
+.project-item a{
+    text-decoration: none;
+}
+
+.project-title-container{
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+}
+
+.project-title-container img{
+    width: 13px; 
 }
 
 .project-item h3{
     color:white;
     text-align: center;
     font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+   
     
-    margin-top: 0;
     
 }
  
@@ -768,6 +785,11 @@ form button{
     .skills-section{
         width: 85%;
     }
+
+    /*project section style*/
+    .project-title-container{
+     padding: 0 0.5rem;
+    }
     
     
     /*contact section style*/
@@ -956,6 +978,10 @@ form button{
    .project-pic{
         width: 100%;
         height:80px;
+    }
+
+    .project-title-container img{
+     width: 8px;
     }
     
 
