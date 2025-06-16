@@ -592,9 +592,6 @@ form button{
     
 }
 
-
-
-
 /* Project page styling*/
 .project-section{
     padding-top: 4rem;
@@ -789,8 +786,6 @@ form button{
         margin-left: 2.5rem;
     }
 
-   
-
     /*about-me section style*/
 
     .skills-section{
@@ -801,8 +796,7 @@ form button{
     .project-title-container{
      padding: 0 0.5rem;
     }
-    
-    
+        
     /*contact section style*/
     .contact-section{
         
@@ -858,7 +852,6 @@ form button{
          
         
     }
-
     
     .copyright{
         margin-right: 0%;
@@ -984,7 +977,6 @@ form button{
         
         
     }
-
 
    .project-pic{
         width: 100%;
@@ -1140,8 +1132,8 @@ form button{
         background-image: url('../VC-experience.png');
     }
 
-    #teacozy-toolbutton{
-        background-image: url('../teacozy.png');
+    #todo-toolbutton{
+        background-image: url('../todo-app-mobile.png');
     }
 
     #expense-toolbutton{
@@ -1159,7 +1151,7 @@ form button{
     #fb-toolbutton,
     #club-toolbutton,
     #vc-toolbutton,
-    #teacozy-toolbutton,
+    #todo-toolbutton,
     #recipe-toolbutton,
     #reddit-toolbutton,
     #expense-toolbutton{
@@ -1180,7 +1172,7 @@ form button{
    #fb-toolbutton::before, 
    #club-toolbutton::before,
    #vc-toolbutton::before,
-   #teacozy-toolbutton::before,
+   #todo-toolbutton::before,
    #recipe-toolbutton::before,
    #reddit-toolbutton::before,
    #expense-toolbutton::before{
@@ -1199,7 +1191,7 @@ form button{
     #fb-toolbutton *,
     #club-toolbutton *,
     #vc-toolbutton *,
-    #teacozy-toolbutton *,
+    #todo-toolbutton *,
     #recipe-toolbutton *,
     #reddit-toolbutton *,
     #expense-toolbutton *{
