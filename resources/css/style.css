@@ -868,11 +868,9 @@ form button{
 
     .project-section{ 
         margin-bottom: 2rem;
-    }
-
-    .hidden{
         display: none;
     }
+
 
     .project-section h1{
     margin-left: 3.2rem;

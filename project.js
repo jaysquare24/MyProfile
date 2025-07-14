@@ -6,14 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (hash) {
     projectSections.forEach(section => {
-      if (section.id === hash) {
-        section.classList.remove('hidden');
-      } else {
-        section.classList.add('hidden');
-      }
+      section.style.display = section.id === hash ? 'block' : 'none';
     });
   }
 });
+
+
 
 
 
