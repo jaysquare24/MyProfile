@@ -862,9 +862,16 @@ form button{
     }
 
     /*project page style*/
+    .project-main{
+        min-height: calc(100vh - 50px); /* Adjust for header height */
+    }
+
     .project-section{ 
         margin-bottom: 2rem;
-        
+    }
+
+    .hidden{
+        display: none;
     }
 
     .project-section h1{
@@ -1147,6 +1154,9 @@ form button{
     #recipe-toolbutton{
         background-image: url('../favRecipe2.png');
     }
+    #ecommerce-toolbutton{
+        background-image: url('../ecommerce-mobile.png');
+    }
 
     #fb-toolbutton,
     #club-toolbutton,
@@ -1154,7 +1164,8 @@ form button{
     #todo-toolbutton,
     #recipe-toolbutton,
     #reddit-toolbutton,
-    #expense-toolbutton{
+    #expense-toolbutton,
+    #ecommerce-toolbutton{
         box-sizing: border-box;
         position: relative; 
         width: 100%;
@@ -1175,8 +1186,8 @@ form button{
    #todo-toolbutton::before,
    #recipe-toolbutton::before,
    #reddit-toolbutton::before,
-   #expense-toolbutton::before{
-    
+   #expense-toolbutton::before,
+   #ecommerce-toolbutton::before{
         content: '';
         position: absolute;
         top: 0;
@@ -1194,7 +1205,8 @@ form button{
     #todo-toolbutton *,
     #recipe-toolbutton *,
     #reddit-toolbutton *,
-    #expense-toolbutton *{
+    #expense-toolbutton *,
+    #ecommerce-toolbutton *{
         position: relative; 
         z-index: 2;
     }
