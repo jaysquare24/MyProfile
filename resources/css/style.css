@@ -33,7 +33,8 @@ body .dark-theme {
 .dark-theme .contact-section h3,
 .dark-theme .skills-header,
 .dark-theme .project-section h1,
-.dark-theme .project-section h3 {
+.dark-theme .project-section h3,
+.dark-theme .message a {
   color: rgb(214, 214, 250);
 }
 
