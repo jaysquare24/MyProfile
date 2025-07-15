@@ -8,22 +8,71 @@ html{
     box-sizing: border-box; 
 }
 
-body{
-    
-    box-sizing: border-box;
-    background-image: url('../about-me.png');
-    background-size: cover;
-    font-family: 'Nunito Sans', sans-serif;
-    width:100%;
-    margin: 0;
-    padding: 0;
+body {
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('../about-me.png');
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  transition: color 0.3s ease;
+  position: relative; /* Needed for ::before layering */
+  z-index: 0;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body .dark-theme {
+  color: #fff;
 
 }
 
-/*header style*/
+.dark-theme .section h1, 
+.dark-theme .contact-section h3,
+.dark-theme .skills-header,
+.dark-theme .project-section h1,
+.dark-theme .project-section h3 {
+  color: rgb(214, 214, 250);
+}
 
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0); /* Default: no darkness */
+  transition: background 0.3s ease;
+}
+
+body.dark-theme::before {
+  background: rgba(0, 0, 0, 0.75); /* Dark overlay when theme is toggled */
+  color: #fff;
+}
+
+h1, h2, h3,h4, p, a, .project-section, .navigation {
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+#theme-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+ 
+}
+.toggle-moved {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+#theme-toggle:active {
+  transform: scale(0.9);
+}
+/*header style*/
 .header-nav{
-    
     box-sizing: border-box;
     background-color: rgb(1, 1, 26);
     color: white;
@@ -84,9 +133,9 @@ body{
     display: flex;
     justify-content: end;
     margin-right: 10%;
+    align-items: center;
        
 }
-
 
 .other-nav {
     box-sizing: border-box;
@@ -393,14 +442,14 @@ p{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 5%;
     align-items: flex-start;
     row-gap: 2rem;
 }
 
 .project-item{
     flex-basis: 30%;
-    
     transition: scale 0.3s ease;
 }
 
@@ -570,9 +619,6 @@ form button{
     justify-content: space-evenly;
     display: inline-flex;
     margin-left: 3%;
-    
-    
-   
     
 }
 .footer-image-container img{

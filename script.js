@@ -1,3 +1,23 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.getElementById('theme-toggle');
+  const currentTheme = localStorage.getItem('theme');
+
+  if (currentTheme === 'dark') {
+    document.body.classList.add('dark-theme');
+  }
+
+  if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      toggleButton.classList.toggle('toggle-moved');
+      const theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+    });
+  }
+});
+
+
+
 /*-------- MENU TOGGLE-----------------*/
 
 /* DOM Elements*/
