@@ -120,7 +120,6 @@ function  slider() {
 slider();
 
 
-
 /*----------- ACTIVE NAV INDICATION ------------*/
 
 document.querySelectorAll('.other-nav a').forEach(link => {

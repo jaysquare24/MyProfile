@@ -649,6 +649,7 @@ form button{
 
 .project-section h1{
     margin-left: 4rem;
+    margin-right: 1rem;
 }
 
 
@@ -1202,15 +1203,11 @@ form button{
     #ecommerce-toolbutton{
         background-image: url('../ecommerce-mobile.png');
     }
+    #media-toolbutton{
+         background-image: url('../mediaMobile.png');
+    }
 
-    #fb-toolbutton,
-    #club-toolbutton,
-    #vc-toolbutton,
-    #todo-toolbutton,
-    #recipe-toolbutton,
-    #reddit-toolbutton,
-    #expense-toolbutton,
-    #ecommerce-toolbutton{
+    .toolAndButtonContainer{
         box-sizing: border-box;
         position: relative; 
         width: 100%;
@@ -1224,15 +1221,7 @@ form button{
     
     }
 
-
-   #fb-toolbutton::before, 
-   #club-toolbutton::before,
-   #vc-toolbutton::before,
-   #todo-toolbutton::before,
-   #recipe-toolbutton::before,
-   #reddit-toolbutton::before,
-   #expense-toolbutton::before,
-   #ecommerce-toolbutton::before{
+   .toolAndButtonContainer::before{
         content: '';
         position: absolute;
         top: 0;
@@ -1244,14 +1233,7 @@ form button{
         z-index: 1; 
     }
 
-    #fb-toolbutton *,
-    #club-toolbutton *,
-    #vc-toolbutton *,
-    #todo-toolbutton *,
-    #recipe-toolbutton *,
-    #reddit-toolbutton *,
-    #expense-toolbutton *,
-    #ecommerce-toolbutton *{
+    .toolAndButtonContainer *{
         position: relative; 
         z-index: 2;
     }
@@ -1266,7 +1248,7 @@ form button{
     .tools-list P{
         background-color: rgb(1, 1, 26); 
         padding: 0.5rem;
-        font-size: 0.6rem;
+       font-size:2.8cqw;
         color: white;
       
     }

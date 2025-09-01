@@ -1,4 +1,5 @@
 /*PROJECT PAGE FILTER*/
+console.log("Project page filter script loaded successfully.");
 
 document.addEventListener('DOMContentLoaded', function () {
   const projectSections = document.querySelectorAll('.project-section');
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
+console.log("Project page filter script loaded successfully.");
 
 
 
